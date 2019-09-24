@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>最热的热菜</title>
+		<link rel="stylesheet" href="../css/navigbar.css">
+		<link rel="stylesheet" href="../css/hotdishes.css">
+		<script src="../js/jquery-3.4.1.js"></script>
+		<script src="../js/navigbar.js"></script>
+		<script src="../js/hotdishes.js"></script>
+	</head>
+	<body>
+		<!-- 导航条开始 -->
+		<div class="top-bar">
+			<ul class="bar-left left">
+				<li style="width:80px;"><i>美食天下</i></li>
+				<li><a title="首页" href="../index.html" >首页</a></li>
+				<li><a title="菜谱" href="cookbook.html">菜谱</a></li>
+				<li><a title="食材" href="scdq.html">食材</a></li>
+				<li><a title="珍选" href="#">珍选</a></li>
+				<li><a title="健康" href="#">健康</a></li>
+				<li><a title="专题" href="subject.html">专题</a></li>
+				<li><a title="社区" href="footbbs.html">社区</a></li>
+				<li><a title="话题" href="#">话题</a></li>
+				<li><a title="活动" href="shequ.html">活动</a></li>
+				<li><a title="搜索" href="#">搜索</a></li>
+				<li class="top_bar_more"><i>更多</i>
+				  <div class="top_bar_more_xl">
+					  <a title="烘焙" href="bake.html">烘焙</a>
+					  <a title="妈妈派" href="#">妈妈派</a>
+				  </div>
+			  	</li>
+			</ul>
+			<div class="right">
+				<ul class="bar-noLogin" id="J_barUser">
+					<li><a title="注册" href="register.html">注册</a></li>
+					<li><a title="登录" href="login.html">登录</a></li>
+					<li id="bar-text-lis">
+						<div class="bar-text">
+							<img width="18" height="18" src="../img/nir1.png" alt="">
+							<p>QQ登录</p>
+						</div>
+						<div class="bar-box">						 						  
+						  <ul>
+						  	<li class="bar-box-item-wb">
+								<img width="18" height="18" src="../img/nir2.png" alt="">
+						  		<p>微博登录</p>
+						  	</li>
+						  	<li class="bar-box-item-wx">
+						  		<img width="18" height="18" src="../img/nir3.png" alt="">
+						  	    <p>微信登录</p>
+						  	</li>
+						  </ul>
+					  	</div>
+					</li>
+					<li id="bar-text-lifb">
+						<div class="bar-textfb">
+							<img width="18" height="18" src="../img/nr1.png" alt="">
+							<p>发布</p>
+						</div>
+						<div class="bar-boxfb">						 						  
+						  <ul>
+						  	<li class="bar-box-item-0">
+						  		<p>发菜谱</p>
+						  	</li>
+						  	<li class="bar-box-item-1">						  		
+						  	    <p>发话题</p>
+						  	</li>
+						  	<li class="bar-box-item-2">
+						  	    <p>发日志</p>
+						  	</li>
+						  </ul>
+					  	</div>
+					</li>
+
+					<li>
+						<div class="bar-textqdyli">
+							<img width="18" height="18" src="../img/nr2.png" alt="">
+							<p>签到有礼</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="bar-textkhd">
+							<img width="18" height="18" src="../img/nr3.png" alt="">
+							<p>客户端</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 导航条结束 -->
+		<!-- 第二行 -->
+		<div class="logo">
+			<div class="logo_img">
+				<a href="#" title="美食天下">美食天下</a>
+			</div>
+			<div class="logo_current">
+				<h1>
+					<a href="#" title="菜谱">菜谱</a>
+				</h1>
+			</div>
+			<div class="logo_search">
+				<div>
+					<input type="text" id="s" class="search_Text">
+					<a href="#" title="搜索" id="search" class="search_Btn">搜索</a>
+				</div>
+			</div>
+			<div class="logo_nav">
+				<a href="#">菜谱首页</a>
+				<a href="#" class="on">分类<i></i><b></b></a>
+				<a href="#">菜单</a>
+				<a href="#">排行</a>
+				<span></span>
+				<a href="#">食材</a>
+				<a href="#">食疗食补</a>
+			</div>
+		</div>
+
+		<!-- 第三行 -->
+		<div  class="nav_wrap2">
+			<ul>
+				<li><a href="../html/cookbook.html">菜谱首页</a></li>
+				<li><a href="../html/hotdishes.html" class="on">热菜</a></li>
+				<li><a href="#">凉菜</a></li>
+				<li><a href="#">汤羹</a></li>
+				<li><a href="#">主食</a></li>
+				<li><a href="#">小吃</a></li>
+				<li><a href="#">西餐</a></li>
+				<li><a href="#">烘焙</a></li>
+				<li><a href="#">饮品</a></li>
+				<li><a href="#">零食</a></li>
+				<li><a href="#">泡酱腌菜</a></li>
+				<li><a href="#">自制食材</a></li>
+				<li><a href="#">最新菜谱</a></li>
+				<li id="navlist" class="navlist">
+					<a class="navlist_a" href="javascript:void(0);">浏览全部菜谱<i></i><b></b></a>
+					<div id="navlist_sub">
+						<div>
+							<h5>主食/饮品/小吃</h5>
+							<ul>
+								<li><a title="米饭" href="#">米饭</a></li>
+								<li><a title="炒饭" href="#">炒饭</a></li>
+								<li><a title="包子" href="#">包子</a></li>
+								<li><a title="饺子" href="#">饺子</a></li>
+								<li><a title="馒头花卷" href="#">馒头花卷</a></li>
+								<li><a title="面条" href="#">面条</a></li>
+								<li><a title="饼" href="#">饼</a></li>
+								<li><a title="粥" href="#">粥</a></li>
+								<li><a title="冰品" href="#">冰品</a></li>
+							</ul>
+						</div>
+						<div>
+							<h5>场景/饮食方式</h5>
+							<ul>
+								<li><a title="早餐" href="#">早餐</a></li>
+								<li><a title="快手菜" href="#">快手菜</a></li>
+								<li><a title="下午茶" href="href="#">下午茶</a></li>
+								<li><a title="中式宴请" href="#">中式宴请</a></li>
+								<li><a title="西式宴请" href="#">西式宴请</a></li>
+								<li><a title="夏季食谱" href="#">夏季食谱</a></li>
+								<li><a title="高颜值" href="#">高颜值</a></li>
+								<li><a title="宿舍时代" href="#">宿舍时代</a></li>
+								<li><a title="二人世界" href="#">二人世界</a></li>
+								<li><a title="儿童" href="#">儿童</a></li>
+								<li><a title="孕妇" href="#">孕妇</a></li>
+								<li><a title="产妇" href="#">产妇</a></li></ul>
+						</div>
+						<div>
+							<h5>中西菜系</h5>
+							<ul>
+								<li><a title="川菜" href="#">川菜</a></li>
+								<li><a title="鲁菜" href="#">鲁菜</a></li>
+								<li><a title="闽菜" href="#">闽菜</a></li>
+								<li><a title="粤菜" href="#">粤菜</a></li>
+								<li><a title="湘菜" href="#">湘菜</a></li>
+								<li><a title="日料" href="#">日料</a></li>
+								<li><a title="韩餐" href="#">韩餐</a></li>
+								<li><a title="泰国菜" href="#">泰国菜</a></li>
+								<li><a title="法国菜" href="#">法国菜</a></li>
+							</ul>
+						</div>
+						<div>
+							<h5>烘焙</h5>
+							<ul>
+								<li><a title="面包" href="#">面包</a></li>
+								<li><a title="蛋糕" href="#">蛋糕</a></li>
+								<li><a title="派塔" href="#">派塔</a></li>
+								<li><a title="吐司" href="#">吐司</a></li>
+								<li><a title="批萨" href="#">批萨</a></li>
+								<li><a title="慕斯" href="#">慕斯</a></li>
+								<li><a title="饼干" href="#">饼干</a></li>
+								<li><a title="曲奇" href="#">曲奇</a></li>
+								<li><a title="布丁" href="#">布丁</a></li>
+							</ul>
+						</div>
+						<div>
+							<h5>常见菜式</h5>
+							<ul>
+								<li><a title="热菜" href="#">热菜</a></li>
+								<li><a title="凉菜" href="#">凉菜</a></li>
+								<li><a title="主食" href="#">主食</a></li>
+								<li><a title="小吃" href="#">小吃</a></li>
+								<li><a title="汤羹" href="#">汤羹</a></li>
+								<li><a title="烘焙" href="#">烘焙</a></li>
+								<li><a title="饮品" href="#">饮品</a></li>
+								<li><a title="家常菜" href="#">家常菜</a></li>
+								<li><a title="开胃菜" href="#">开胃菜</a></li>
+							</ul>
+						</div>
+						<div>
+							<h5>所有菜谱</h5>
+							<ul>
+								<li><a title="最新发布" href="#">最新发布</a></li>
+								<li><a title="最新推荐" href="#">最新推荐</a></li>
+								<li><a title="最热菜谱" href="#">最热菜谱</a></li>
+								<li><a title="家常菜谱" href="#" style="color:#ff6767;">家常菜谱</a></li>
+							</ul>
+							<h5>食疗食补</h5>
+							<ul>
+								<li><a title="补钙" href="#">补钙</a></li>
+								<li><a title="贫血" href="#">贫血</a></li>
+								<li><a title="免疫力" href="#">免疫力</a></li>
+								<li><a title="养胃" href="#">养胃</a></li>
+								<li><a title="对抗雾霾" href="#">对抗雾霾</a></li>
+								<li><a title="润肺止咳" href="#">润肺止咳</a></li>
+								<li><a title="失眠" href="#">失眠</a></li>
+								<li><a title="排毒" href="#">排毒</a></li>
+								<li><a title="养颜" href="#">养颜</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 第四行 -->
+		<div class="w mt10 clear">
+			<div class="row4_pic">
+				<a href="#" title="爽翻味蕾，无辣不欢"><img src="../img/hot4row.jpg" alt="爽翻味蕾，无辣不欢"></a>
+			</div>
+		</div>
+
+		<div class="wrap mt10">
+			<div class="w clear">
+			<!-- 左 -->
+				<div class="space_left">
+					<div class="ui_title">
+						<div class="ui_title_left">
+							<h3 class="on">
+								<a href="#" title="热菜">热菜</a>
+							</h3>
+							<a href="#" class="ui_title_right">推荐</a>
+							<a href="#" class="ui_title_right">最热</a>
+							<a href="#" class="ui_title_right ab">最新</a>
+						</div>
+					</div>
+
+					<div class="left_list">
+						<ul>
+							<li>
+								<div class="pic">
+									<a href="#" title="土豆烧排骨">
+										<span class="copyright">独家</span><img src="../img/list24.jpg" alt="土豆烧排骨">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="土豆烧排骨">土豆烧排骨</a></h2>
+									<p class="author"><a href="#">墨儿Moer🌸</a></p>
+									<p class="material">原料：排骨、土豆、大葱、八角、香叶、干辣椒、冰糖、橘子皮、花椒、姜、蒜、老抽、生抽、李锦记卤汁、料酒。</p>
+									<div class="subs clear">
+										<span>38人收藏，843次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="青豆炒腊肠">
+										<span class="copyright">独家</span><img src="../img/hlist8.jpg" alt="青豆炒腊肠">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="青豆炒腊肠">青豆炒腊肠</a></h2>
+									<p class="author"><a href="#">墨儿Moer🌸</a></p>
+									<p class="material">原料：排青豆、腊肠、盐、油。</p>
+									<div class="subs clear">
+										<span>31人收藏，565次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="咖喱杏鲍菇">
+										<img src="../img/hlist2.jpg" alt="咖喱杏鲍菇">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="咖喱杏鲍菇">咖喱杏鲍菇</a></h2>
+									<p class="author"><a href="#">尔东叶</a></p>
+									<p class="material">原料：杏鲍菇、油、盐、咖喱、洋葱。</p>
+									<div class="subs clear">
+										<span>1人收藏，222次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="榨菜蒸牛肉">
+										<span class="copyright">独家</span><img src="../img/hlist3.jpg" alt="榨菜蒸牛肉">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="榨菜蒸牛肉">榨菜蒸牛肉</a></h2>
+									<p class="author"><a href="#">肥肥美食</a></p>
+									<p class="material">原料：牛肉、榨菜、姜丝、葱花、盐、油、酱油、蚝油、料酒、生粉。</p>
+									<div class="subs clear">
+										<span>1人收藏，222次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="胡辣羊蹄">
+										<img src="../img/hlist5.jpg" alt="胡辣羊蹄">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="胡辣羊蹄">胡辣羊蹄</a></h2>
+									<p class="author"><a href="#">花花的风味</a></p>
+									<p class="material">原料：羊蹄、八角、桂皮、草果、干姜、柠檬、老抽、生抽、白酒、茴香、花椒、干辣椒、胡椒、辣椒面、海鲜酱。</p>
+									<div class="subs clear">
+										<span>1人收藏，314次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="蒜蓉油麦菜">
+										<img src="../img/hlist4.jpg" alt="蒜蓉油麦菜">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="蒜蓉油麦菜">蒜蓉油麦菜</a></h2>
+									<p class="author"><a href="#">琦琦＆妈妈</a></p>
+									<p class="material">原料：油麦菜、大蒜、小米辣、生抽、老抽、蚝油、盐、鸡精、淀粉。</p>
+									<div class="subs clear">
+										<span>2人收藏，311次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="红烧日本豆腐">
+										<img src="../img/list9.jpg" alt="红烧日本豆腐">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="红烧日本豆腐">红烧日本豆腐</a></h2>
+									<p class="author"><a href="#">小美的美食谱</a></p>
+									<p class="material">原料：日本豆腐、生粉、青椒、酱油、油、蒜、豆瓣酱、盐、红椒。</p>
+									<div class="subs clear">
+										<span>52人收藏，1746次阅读</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								<div class="pic">
+									<a href="#" title="红烧肉">
+										<img src="../img/hlist6.jpg" alt="红烧肉">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="红烧肉">红烧肉</a></h2>
+									<p class="author"><a href="#">老杨的厨房</a></p>
+									<p class="material">原料：鸡五花肉、姜、草果、冰糖、八角。</p>
+									<div class="subs clear">
+										<span>78994人收藏，41200972次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="【麻辣香锅】">
+										<span class="copyright">独家</span><img src="../img/hlist7.jpg" alt="【麻辣香锅】">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="【麻辣香锅】">【麻辣香锅】</a></h2>
+									<p class="author"><a href="#">花事了的花</a></p>
+									<p class="material">原料：虾、魔芋丝、蟹棒、鱼丸、鱼豆腐、牛肉丸、灯笼椒、香叶、花椒、麻椒、生姜、蒜、麻辣香锅底料、白玉菇、蟹味菇、金针菇、豆腐皮、藕片、菜花、小米椒、香菜。</p>
+									<div class="subs clear">
+										<span>26896人收藏，759954次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="咖喱杏鲍菇">
+										<img src="../img/hlist2.jpg" alt="咖喱杏鲍菇">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="咖喱杏鲍菇">咖喱杏鲍菇</a></h2>
+									<p class="author"><a href="#">尔东叶</a></p>
+									<p class="material">原料：杏鲍菇、油、盐、咖喱、洋葱。</p>
+									<div class="subs clear">
+										<span>1人收藏，222次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="榨菜蒸牛肉">
+										<span class="copyright">独家</span><img src="../img/hlist3.jpg" alt="榨菜蒸牛肉">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="榨菜蒸牛肉">榨菜蒸牛肉</a></h2>
+									<p class="author"><a href="#">肥肥美食</a></p>
+									<p class="material">原料：牛肉、榨菜、姜丝、葱花、盐、油、酱油、蚝油、料酒、生粉。</p>
+									<div class="subs clear">
+										<span>1人收藏，222次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="胡辣羊蹄">
+										<img src="../img/hlist5.jpg" alt="胡辣羊蹄">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="胡辣羊蹄">胡辣羊蹄</a></h2>
+									<p class="author"><a href="#">花花的风味</a></p>
+									<p class="material">原料：羊蹄、八角、桂皮、草果、干姜、柠檬、老抽、生抽、白酒、茴香、花椒、干辣椒、胡椒、辣椒面、海鲜酱。</p>
+									<div class="subs clear">
+										<span>1人收藏，314次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="蒜蓉油麦菜">
+										<img src="../img/hlist4.jpg" alt="蒜蓉油麦菜">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="蒜蓉油麦菜">蒜蓉油麦菜</a></h2>
+									<p class="author"><a href="#">琦琦＆妈妈</a></p>
+									<p class="material">原料：油麦菜、大蒜、小米辣、生抽、老抽、蚝油、盐、鸡精、淀粉。</p>
+									<div class="subs clear">
+										<span>2人收藏，311次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="红烧日本豆腐">
+										<img src="../img/list9.jpg" alt="红烧日本豆腐">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="红烧日本豆腐">红烧日本豆腐</a></h2>
+									<p class="author"><a href="#">小美的美食谱</a></p>
+									<p class="material">原料：日本豆腐、生粉、青椒、酱油、油、蒜、豆瓣酱、盐、红椒。</p>
+									<div class="subs clear">
+										<span>52人收藏，1746次阅读</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+						<ul class="picked">
+							<li>
+								<div class="pic">
+									<a href="#" title="香菇鸡腿">
+										<span class="copyright">独家</span><img src="../img/hlist1.jpg" alt="香菇鸡腿">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="香菇鸡腿">香菇鸡腿</a></h2>
+									<p class="author"><a href="#">小家有女初长成</a></p>
+									<p class="material">原料：鸡腿、洋葱片、胡萝卜、香菇、芹菜、食用油、食用盐、生抽、蚝油、葱、料酒、听装啤酒、姜末。</p>
+									<div class="subs clear">
+										<span>1人收藏，222次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="土豆烧排骨">
+										<span class="copyright">独家</span><img src="../img/list24.jpg" alt="土豆烧排骨">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="土豆烧排骨">土豆烧排骨</a></h2>
+									<p class="author"><a href="#">墨儿Moer🌸</a></p>
+									<p class="material">原料：排骨、土豆、大葱、八角、香叶、干辣椒、冰糖、橘子皮、花椒、姜、蒜、老抽、生抽、李锦记卤汁、料酒。</p>
+									<div class="subs clear">
+										<span>38人收藏，843次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="咖喱杏鲍菇">
+										<img src="../img/hlist2.jpg" alt="咖喱杏鲍菇">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="咖喱杏鲍菇">咖喱杏鲍菇</a></h2>
+									<p class="author"><a href="#">尔东叶</a></p>
+									<p class="material">原料：杏鲍菇、油、盐、咖喱、洋葱。</p>
+									<div class="subs clear">
+										<span>1人收藏，222次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="榨菜蒸牛肉">
+										<span class="copyright">独家</span><img src="../img/hlist3.jpg" alt="榨菜蒸牛肉">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="榨菜蒸牛肉">榨菜蒸牛肉</a></h2>
+									<p class="author"><a href="#">肥肥美食</a></p>
+									<p class="material">原料：牛肉、榨菜、姜丝、葱花、盐、油、酱油、蚝油、料酒、生粉。</p>
+									<div class="subs clear">
+										<span>1人收藏，222次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="胡辣羊蹄">
+										<img src="../img/hlist5.jpg" alt="胡辣羊蹄">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="胡辣羊蹄">胡辣羊蹄</a></h2>
+									<p class="author"><a href="#">花花的风味</a></p>
+									<p class="material">原料：羊蹄、八角、桂皮、草果、干姜、柠檬、老抽、生抽、白酒、茴香、花椒、干辣椒、胡椒、辣椒面、海鲜酱。</p>
+									<div class="subs clear">
+										<span>1人收藏，314次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="蒜蓉油麦菜">
+										<img src="../img/hlist4.jpg" alt="蒜蓉油麦菜">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="蒜蓉油麦菜">蒜蓉油麦菜</a></h2>
+									<p class="author"><a href="#">琦琦＆妈妈</a></p>
+									<p class="material">原料：油麦菜、大蒜、小米辣、生抽、老抽、蚝油、盐、鸡精、淀粉。</p>
+									<div class="subs clear">
+										<span>2人收藏，311次阅读</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#" title="红烧日本豆腐">
+										<img src="../img/list9.jpg" alt="红烧日本豆腐">
+									</a>
+								</div>
+								<div class="detail">
+									<h2><a href="#" title="红烧日本豆腐">红烧日本豆腐</a></h2>
+									<p class="author"><a href="#">小美的美食谱</a></p>
+									<p class="material">原料：日本豆腐、生粉、青椒、酱油、油、蒜、豆瓣酱、盐、红椒。</p>
+									<div class="subs clear">
+										<span>52人收藏，1746次阅读</span>
+									</div>
+								</div>
+							</li>
+						</ul>						
+					</div>
+
+					<div class="ui_page mt10">
+						<div class="ui_page_inner">
+							<a href="#" title="">上一页</a>
+							<a href="#" title="" class="now_page">1</a>
+							<a href="#" title="">2</a>
+							<a href="#" title="">3</a>
+							<a href="#" title="">4</a>
+							<a href="#" title="">5</a>
+							<span>...</span>
+							<a href="#" title="">下一页</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- 右 -->
+				<div class="space_right">
+					<div class="ui_title clear">
+						<div class="ui_title_left">
+							<h3 class="on">
+								<a href="#" title="热门专题">热门专题</a>
+							</h3>
+							<a href="#" class="ui_title_right">更多</a>
+						</div>
+					</div>
+					<div class="right_list">
+						<ul>
+							<li>
+								<a href="#" title="秋天喉咙痛，推荐5款护嗓食物"><img src="../img/rlist1.jpg" alt="秋天喉咙痛，推荐5款护嗓食物"><p>秋天喉咙痛，推荐5款护嗓食物</p></a>
+							</li>
+							<li>
+								<a href="#" title="秋寒凉，防腹泻"><img src="../img/rlist2.jpg" alt="秋寒凉，防腹泻"><p>秋寒凉，防腹泻</p></a>
+							</li>
+							<li>
+								<a href="#" title="白露过后，润燥防寒很重要！"><img src="../img/rlist3.jpg" alt="白露过后，润燥防寒很重要！"><p>白露过后，润燥防寒很重要！</p></a>
+							</li>
+							<li>
+								<a href="#" title="合理饮食，远离脂肪肝"><img src="../img/rlist4.jpg" alt="合理饮食，远离脂肪肝"><p>合理饮食，远离脂肪肝</p></a>
+							</li>
+							<li>
+								<a href="#" title="秋天合理进补，滋养身体好过冬"><img src="../img/rlist5.jpg" alt="秋天合理进补，滋养身体好过冬"><p>秋天合理进补，滋养身体好过冬</p></a>
+							</li>
+						</ul>
+					</div>
+					<div class="ui_title mt20 clear">
+						<div class="ui_title_left">
+							<h3 class="on">
+								<a href="#" title="最受欢迎的家常菜">最受欢迎的家常菜</a>
+							</h3>
+							<a href="#" class="ui_title_right">更多</a>
+						</div>
+					</div>
+					<div class="homec mt10">
+						<div class="homec_m">
+							<a title="红烧肉的做法大全" href="#">红烧肉</a>
+							<a title="红烧茄子的做法大全" href="#">红烧茄子</a>
+							<a title="红烧鱼的做法大全" href="#">红烧鱼</a>
+							<a title="鱼香肉丝的做法大全" href="#">鱼香肉丝</a>
+							<a title="可乐鸡翅的做法大全" href="#">可乐鸡翅</a>
+							<a title="宫保鸡丁的做法大全" href="#">宫保鸡丁</a>
+							<a title="红烧排骨的做法大全" href="#">红烧排骨</a>
+							<a title="糖醋排骨的做法大全" href="#">糖醋排骨</a>
+							<a title="水煮肉片的做法大全" href="#">水煮肉片</a>
+							<a title="佛跳墙的做法大全" href="#">佛跳墙</a>
+							<a title="麻婆豆腐的做法大全" href="#">麻婆豆腐</a>
+							<a title="麻辣香锅的做法大全" href="#">麻辣香锅</a>
+							<a title="秋葵的做法大全" href="#">秋葵</a>
+							<a title="黑木耳的做法大全" href="#">黑木耳</a>
+							<a title="大闸蟹的做法大全" href="#">大闸蟹</a>
+							<a title="年夜饭菜谱大全" href="#">年夜饭</a>
+							<a title="瘦身吃什么" href="#">瘦身</a>
+							<a title="补气血吃什么" href="#">补气血</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 底部 -->
+		<div class="foot clear">
+			<div class="w">
+				<div class="foot1">
+					<p class="b"><a href="#" title="美食天下 - 让吃更美好">美食天下 - 让吃更美好</a></p>
+					<p class="c">
+						<a title="菜谱" href="#">菜谱</a> ·
+						<a title="食材" href="#">食材</a> ·
+						<a title="美食魔方" href="#">魔方</a> ·
+						<a title="关于我们" href="#" >关于我们</a> ·
+						<a title="联系我们" href="#" >联系我们</a> ·
+						<a title="加入我们" href="#" >加入我们</a> ·
+						<a title="服务声明" href="#" >服务声明</a> ·
+						<a title="友情链接" href="#" >友情链接</a> ·
+						<a title="网站地图" href="#" >网站地图</a> ·
+						<a title="移动应用" href="#">移动应用</a>
+					</p>
+					<p>© 2004-2019 美食天下 保留所有权利 - 京ICP证090244号</p>
+				</div>
+				<div class="foot2">
+					<img src="../img/msc_app.png" alt="手机客户端">
+				</div>
+				<div class="foot2 foot3">
+					<img src="../img/weixin.png" alt="微信公众号">
+				</div>
+			</div>
+		</div>
+
+		<!-- 回到顶部 -->
+		<div class="gotop">
+			<a href="#"><img src="../img/gotop.png" title="回到顶部"></a>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/navigbar.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<script src="js/jquery.min.js"></script>
+	<script src='js/navigbar.js'></script>
+	<script src='js/index.js'></script>
+    <script src="iconfont/iconfont.js"></script>
+</head>
+<body>
+	<div class="top-bar">
+		<ul class="bar-left left">
+			<li style="width:80px;"><i>美食天下</i></li>
+			<li><a title="首页" href="#">首页</a></li>
+			<li><a title="菜谱" href="html/cookbook.html">菜谱</a></li>
+			<li><a title="食材" href="html/scdq.html">食材</a></li>
+			<li><a title="珍选" href="#">珍选</a></li>
+			<li><a title="健康" href="#">健康</a></li>
+			<li><a title="专题" href="html/subject.html">专题</a></li>
+			<li><a title="社区" href="html/footbbs.html">社区</a></li>
+			<li><a title="话题" href="#">话题</a></li>
+			<li><a title="活动" href="html/shequ.html">活动</a></li>
+			<li><a title="搜索" href="#">搜索</a></li>
+			<li class="top_bar_more"><i>更多</i>
+			  <div class="top_bar_more_xl">
+				  <a title="烘焙" href="html/bake.html">烘焙</a>
+				  <a title="妈妈派" href="#">妈妈派</a>
+			  </div>
+		  	</li>
+		</ul>
+		<div class="right">
+			<ul class="bar-noLogin" id="J_barUser">
+				<li><a title="注册" href="html/register.html" >注册</a></li>
+				<li><a title="登录" href="html/login.html" >登录</a></li>
+				<li id="bar-text-lis">
+					<div class="bar-text">
+						<img width="18" height="18" src="img/nir1.png" alt="">
+						<p>QQ登录</p>
+					</div>
+					<div class="bar-box">						 						  
+					  <ul>
+					  	<li class="bar-box-item-wb">
+							<img width="18" height="18" src="img/nir2.png" alt="">
+					  		<p>微博登录</p>
+					  	</li>
+					  	<li class="bar-box-item-wx">
+					  		<img width="18" height="18" src="img/nir3.png" alt="">
+					  	    <p>微信登录</p>
+					  	</li>
+					  </ul>
+				  	</div>
+				</li>
+				<li id="bar-text-lifb">
+					<div class="bar-textfb">
+						<img width="18" height="18" src="img/nr1.png" alt="">
+						<p>发布</p>
+					</div>
+					<div class="bar-boxfb">						 						  
+					  <ul>
+					  	<li class="bar-box-item-0">
+					  		<p>发菜谱</p>
+					  	</li>
+					  	<li class="bar-box-item-1">						  		
+					  	    <p>发话题</p>
+					  	</li>
+					  	<li class="bar-box-item-2">
+					  	    <p>发日志</p>
+					  	</li>
+					  </ul>
+				  	</div>
+				</li>
+
+				<li>
+					<div class="bar-textqdyli">
+						<img width="18" height="18" src="img/nr2.png" alt="">
+						<p>签到有礼</p>
+					</div>
+				</li>
+
+				<li>
+					<div class="bar-textkhd">
+						<img width="18" height="18" src="img/nr3.png" alt="">
+						<p>客户端</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 导航栏 end -->
+	<!-- 菜单栏 -->
+	<div class="logo">
+		<div class="logo_img">
+			<a href="#" title="美食天下">美食天下</a>
+		</div>
+		<div class="logo_search">
+			<div>
+				<input type="text" id="s" class="search_Text">
+				<a href="#" title="搜索" id="search" class="search_Btn">搜索</a>
+			</div>
+		</div>
+		<div class="logo_nav">
+			<a href="#" class="on">首页</a>
+			<a href="#">菜谱</a>
+			<a href="#">食材</a>
+			<a href="#">珍选</a>
+			<a href="#">健康</a>
+			<a href="html/subject.html">专题</a>
+			<a href="#">社区</a>
+			<a href="#">话题</a>
+		</div>
+	</div>
+	<!-- 菜单栏 end-->
+	<!-- 主体 -->
+	<div class="wrap">
+		<div class="w clear">
+			<!-- 轮播图 -->
+			<div class="w1">
+				<div class="xmbox">
+		            <ul class="uls" id="uls">
+		                <li><img src="img/01.jpg" alt=""></li>
+		                <li ><img src="img/02.jpg" alt=""></li>
+		                <li><img src="img/03.jpg" alt=""></li>
+		                <li><img src="img/04.jpg" alt=""></li>
+		                <li><img src="img/05.jpg" alt=""></li>
+		                <li><img src="img/06.jpg" alt=""></li>
+		                <li><img src="img/01.jpg" alt=""></li>
+		            </ul>
+		            <span class="iconfont icon-xiangzuo" id="left"></span>
+		            <span class="iconfont icon-xiangyou" id="right"></span>
+		            <ol id="ols" class="ols">
+		                <li class="selected"></li>
+		                <li></li>
+		                <li></li>
+		                <li></li>
+		                <li></li>
+		                <li></li>
+		            </ol>
+		        </div>
+				<!-- 选项卡 -->
+				<div class="box">
+					<ul class="ulss">
+						<li>
+							<p><span class="iconfont icon-caidan spanleft"></span>菜谱大全<span class="iconfont icon-xiangyou spanright"></span></p>	
+							<div>
+								<div class="xmneirong">
+									<div class="xmneirong_xm">
+										<p>一周热门</p>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>凉菜</p>
+										<span>精选择2060到</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p><br>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p><br>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p><br>
+										<span>近7天最受欢迎</span>
+									</div>
+								</div>
+
+							</div>		
+						</li>
+						<li>
+							<p><span class="iconfont icon-xihongshi spanleft"></span>食材大全<span class="iconfont icon-xiangyou spanright"></span></p>	
+							<div>
+								<div class="xmneirong">
+									<div class="xmneirong_xm">
+										<p>新果干果</p>
+										<span>精选123到</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>西红柿</p>
+										<span>精选择2060到</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p><br>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>水产品</p>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p><br>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p><br>
+										<span>近7天最受欢迎</span>
+									</div>
+								</div>
+
+							</div>			
+						</li>
+						<li>
+							<p><span class="iconfont icon-tang spanleft"></span>饮食健康<span class="iconfont icon-xiangyou spanright"></span></p>	
+							<div>
+								<div class="xmneirong">
+									<div class="xmneirong_xm">
+										<p>最新推荐</p>
+										<span>健康知识</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>西红柿</p>
+										<span>精选择2060到</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p><br>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>水产品</p>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p><br>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p><br>
+										<span>近7天最受欢迎</span>
+									</div>
+								</div>
+							</div>			
+						</li>
+						<li>
+							<p><span class="iconfont icon-caidan1 spanleft "></span>专题专区<span class="iconfont icon-xiangyou spanright"></span></p>	
+							<div>
+								<div class="xmneirong">
+									<div class="xmneirong_xm">
+										<p>新果干果</p>
+										<span>精选123到</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>西红柿</p>
+										<span>精选择2060到</span>
+									</div>
+									<div class="xmneirong_xm">
+										<p>一周热门</p><br>
+										<span>近7天最受欢迎</span>
+									</div>
+									<div class="xmneirong_xm xmneirong_xm_img1">
+										<img src="img/mamapai.jpg" alt="" width="165">
+									</div>
+									<div class="xmneirong_xm xmneirong_xm_img1">
+										<img src="img/hongbei.jpg" alt="" width="165">
+									</div>
+									
+								</div>
+							</div>			
+						</li>
+						<li>
+							<p><span class="iconfont icon-dianzan spanleft"></span>一起走红<span class="iconfont icon-xiangyou spanright"></span></p>	
+							<div>
+								<div class="xmneirong">
+									<div class="xmneirong_erwm">
+										<img src="img/erweima.jpg" alt="" width="120">
+									</div>
+									<div class="xmneirong_xmlogo">
+										<img src="img/tu.jpg" alt="" width="390" >
+									</div>
+									
+								</div>
+							</div>			
+						</li>
+					</ul>
+				</div>
+				<!-- 选项卡 end -->
+			</div>
+			<!-- 轮播图 end -->
+		</div>
+	</div>
+	<!-- 文字轮播图 -->
+	<div class="w2 ">
+		<div class="wzbox">
+			<ul class="wzbox_ul">
+				<li>
+					<h2><a href="#">吃货的力量：泡面神吃法</a></h2>
+					<p>
+						<span>红凤凤的菜单</span><br/>
+						"油亮油亮五花肉的N种馋人吃法，飘香四溢，肥而不腻，回味无穷～好吃到让你停不下来！"
+					</p>
+				</li>
+				<li>
+					<h2><a href="#">吃货的力量：泡面神吃法</a></h2>
+					<p>
+						<span>红凤凤的菜单</span><br/>
+						"油亮油亮五花肉的N种馋人吃法，飘香四溢，肥而不腻，回味无穷～好吃到让你停不下来！"
+					</p>
+				</li>
+				<li>
+					<h2><a href="#">吃货的力量：泡面神吃法</a></h2>
+					<p>
+						<span>红凤凤的菜单</span><br/>
+						"油亮油亮五花肉的N种馋人吃法，飘香四溢，肥而不腻，回味无穷～好吃到让你停不下来！"
+					</p>
+				</li>
+				<li>
+					<h2><a href="#">吃货的力量：泡面神吃法</a></h2>
+					<p>
+						<span>红凤凤的菜单</span><br/>
+						"油亮油亮五花肉的N种馋人吃法，飘香四溢，肥而不腻，回味无穷～好吃到让你停不下来！"
+					</p>
+				</li>
+				<li>
+					<h2><a href="#">吃货的力量：泡面神吃法</a></h2>
+					<p>
+						<span>红凤凤的菜单</span><br/>
+						"油亮油亮五花肉的N种馋人吃法，飘香四溢，肥而不腻，回味无穷～好吃到让你停不下来！"
+					</p>
+				</li>
+				<li>
+					<h2><a href="#">吃货的力量：泡面神吃法</a></h2>
+					<p>
+						<span>红凤凤的菜单</span><br/>
+						"油亮油亮五花肉的N种馋人吃法，飘香四溢，肥而不腻，回味无穷～好吃到让你停不下来！"
+					</p>
+				</li>
+				<li>
+					<h2><a href="#">吃货的力量：泡面神吃法</a></h2>
+					<p>
+						<span>红凤凤的菜单</span><br/>
+						"油亮油亮五花肉的N种馋人吃法，飘香四溢，肥而不腻，回味无穷～好吃到让你停不下来！"
+					</p>
+				</li>
+				<li>
+					<h2><a href="#">吃货的力量：泡面神吃法</a></h2>
+					<p>
+						<span>红凤凤的菜单</span><br/>
+						"油亮油亮五花肉的N种馋人吃法，飘香四溢，肥而不腻，回味无穷～好吃到让你停不下来！"
+					</p>
+				</li>
+				<li>
+					<h2><a href="#">吃货的力量：泡面神吃法</a></h2>
+					<p>
+						<span>红凤凤的菜单</span><br/>
+						"油亮油亮五花肉的N种馋人吃法，飘香四溢，肥而不腻，回味无穷～好吃到让你停不下来！"
+					</p>
+				</li>
+				<li>
+					<h2><a href="#">吃货的力量：泡面神吃法</a></h2>
+					<p>
+						<span>红凤凤的菜单</span><br/>
+						"油亮油亮五花肉的N种馋人吃法，飘香四溢，肥而不腻，回味无穷～好吃到让你停不下来！"
+					</p>
+				</li>
+				<li>
+					<h2><a href="#">吃货的力量：泡面神吃法</a></h2>
+					<p>
+						<span>红凤凤的菜单</span><br/>
+						"油亮油亮五花肉的N种馋人吃法，飘香四溢，肥而不腻，回味无穷～好吃到让你停不下来！"
+					</p>
+				</li>
+				<li>
+					<h2><a href="#">吃货的力量：泡面神吃法</a></h2>
+					<p>
+						<span>红凤凤的菜单</span><br/>
+						"油亮油亮五花肉的N种馋人吃法，飘香四溢，肥而不腻，回味无穷～好吃到让你停不下来！"
+					</p>
+				</li>
+			</ul>
+			<span class="iconfont icon-xiangzuo wzbox_left"></span>
+            <span class="iconfont icon-xiangyou wzbox_right"></span>
+		</div>
+	</div>
+	<!-- 文字轮播图 end  -->
+	<!-- tab栏文字 -->
+	<div class="w3 clear">
+		<div class="w3_1 w3live">
+			<div class="w3_1_ul2">
+				<ul class="tab_uls">
+					<li class="tab_news"><h2>食疗</h2></li>
+					<li style="margin-left: 30px;"><h2>健康</h2></li >
+					<p><a href="#">健康首页</a></p>
+				</ul>
+			</div>
+			<section class="tab_footer">
+				<div class="tab_dis">
+					<img src="img/xm1.jpg" alt="" width="310px" height="124px">
+					<p><span>○</span>&nbsp;&nbsp;女人最容易贫血，吃什么补血养血？</p>
+					<p><span>○</span>&nbsp;&nbsp;眼睛疲劳、干涩，你需要保护眼睛了！</p>
+					<p><span>○</span>&nbsp;&nbsp;眼睛疲劳、干涩，你需要保护眼睛了！</p>
+					<p><span>○</span>&nbsp;&nbsp;中秋节后养生，这些方法用起来</p>
+					<p><span>○</span>&nbsp;&nbsp;专题┊那些美颜食物的神级吃法</p>
+					<p><span>○</span>&nbsp;&nbsp;专题┊低卡减肥餐，让你瘦到飞起来</p>
+				</div>
+				<div>					
+					<div class="table_dis2_div">瘦身</div>
+					<div class="table_dis2_div">丰胸</div>
+					<div class="table_dis2_div">养颜</div>
+					<div class="table_dis2_div">排毒</div>
+					<div class="table_dis2_div">贫血</div>
+					<div class="table_dis2_div">不改</div>
+					<div class="table_dis2_div">丰胸</div>
+					<div class="table_dis2_div">养颜</div>
+					<div class="table_dis2_div">排毒</div>
+					<div class="table_dis2_div">排毒</div>
+					<div class="table_dis2_div">贫血</div>
+					<div class="table_dis2_div">不改</div>
+					<div class="table_dis2_div">丰胸</div>
+					<div class="table_dis2_div">养颜</div>
+					<div class="table_dis2_div">排毒</div>
+					<div class="table_dis2_div">丰胸</div>
+					<div class="table_dis2_div">养颜</div>
+					<div class="table_dis2_div">排毒</div>
+				</div>
+			</section>
+		</div>
+		<div class="w3_2 w3live">
+			<div class="w3_1_ul2">
+				<ul class="tab_uls2">
+					<li class="tab_news2"><h2>烘焙</h2></li>
+					<li style="margin-left: 30px;"><h2>食谱</h2></li >
+					<p><a href="#">烘焙专区</a></p>
+				</ul>
+			</div>
+			<section class="tab_footer2">
+				<div class="tab_dis2">
+					<img src="img/xm2.jpg" alt="" width="310px" height="124px">
+					<p><span>○</span>&nbsp;&nbsp;这些挑水果小窍门，你知道吗？</p>
+					<p><span>○</span>&nbsp;&nbsp;网红肉松小贝，在家就能做！</p>
+					<p><span>○</span>&nbsp;&nbsp;内藏惊喜的彩虹戚风蛋糕！</p>
+					<p><span>○</span>&nbsp;&nbsp;消耗蛋挞皮－简单版红薯酥</p>
+					<p><span>○</span>&nbsp;&nbsp;菜单┊奥利奥的N种百搭吃法</p>
+					<p><span>○</span>&nbsp;&nbsp;专题┊另类咸香口儿 满足你的味蕾！</p>
+				</div>
+				<div>					
+					<div class="table_dis2_div">瘦身</div>
+					<div class="table_dis2_div">丰胸</div>
+					<div class="table_dis2_div">养颜</div>
+					<div class="table_dis2_div">排毒</div>
+					<div class="table_dis2_div">贫血</div>
+					<div class="table_dis2_div">不改</div>
+					<div class="table_dis2_div">丰胸</div>
+					<div class="table_dis2_div">养颜</div>
+					<div class="table_dis2_div">排毒</div>
+					<div class="table_dis2_div">排毒</div>
+					<div class="table_dis2_div">贫血</div>
+					<div class="table_dis2_div">不改</div>
+					<div class="table_dis2_div">丰胸</div>
+					<div class="table_dis2_div">养颜</div>
+					<div class="table_dis2_div">排毒</div>
+					<div class="table_dis2_div">丰胸</div>
+					<div class="table_dis2_div">养颜</div>
+					<div class="table_dis2_div">排毒</div>
+				</div>
+			</section>
+		</div>
+		<div class="w3_3 w3live">
+			<div class="w3_1_ul2">
+				<ul class="tab_uls">
+					<li class="tab_news"><h2>为你推荐</h2></li>
+					
+					<p><a href="#">我的收藏</a></p>
+				</ul>
+			</div>
+			<section class="tab_footer">
+				<div class="tab_dis">
+					<img src="img/xm3.jpg" alt="" width="310px" height="124px">
+					<p><span>○</span>&nbsp;&nbsp;合理饮食，远离脂肪肝</p>
+					<p><span>○</span>&nbsp;&nbsp;划重点！食物降血脂这些更有效</p>
+					<p><span>○</span>&nbsp;&nbsp;粗粮细作：健康能量燕麦甜品</p>
+					<p><span>○</span>&nbsp;&nbsp;妈妈派┊童趣童味，儿童创意餐点</p>
+					<p><span>○</span>&nbsp;&nbsp;免费抽奖┊ACA 手持电动打蛋器</p>
+					<p><span>○</span>&nbsp;&nbsp;专题┊酒后头痛，5种食物可缓解</p>
+				</div>
+			</section>			
+		</div>
+	</div>
+	<!-- tab栏文字 end-->
+	<!-- tab栏图片 -->
+	<div class="w5">
+		<div class="ui_title5">
+			<div class="w3_1_ul5">
+				<ul class="tab_uls5">
+					<li class="tab_news5"><h2>新秀菜谱</h2></li>
+					<li style="margin: 0px 20px;"><h2>一周热门</h2></li >
+					<li><h2>最受欢迎的家常菜</h2></li>
+					<p><a href="#">凉菜</a></p>
+					<p style="margin-left: 50px;"><a href="#">热菜</a></p>
+					<p style="margin-left: 100px;"><a href="#">汤羹</a></p>
+					<p style="margin-left: 150px;"><a href="#">主食</a></p>
+					<p style="margin-left: 200px;"><a href="#">小吃</a></p>
+					<p style="margin-left: 250px;"><a href="#">西餐</a></p>
+					<p style="margin-left: 300px;"><a href="#">菜谱首页</a></p>
+				</ul>
+			</div>
+			<section class="tab_footer5">
+				<div class="tab_dis5">
+					<ul class="tab_dis5_uls">
+						<li>
+							<i><img src="img/11.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/12.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/13.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/14.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/11.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/12.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/13.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/14.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/11.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/12.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/13.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/14.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/11.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/12.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/13.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/14.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/11.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/12.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/13.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/14.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+					</ul>
+				</div>
+				<div>					
+					<ul class="tab_dis5_uls">
+						<li>
+							<i><img src="img/15.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/16.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/17.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/18.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/11.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/12.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/13.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/14.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/11.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/12.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/13.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/14.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/11.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/12.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/13.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/14.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/11.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/12.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/13.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/14.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+					</ul>
+				</div>
+				<div>					
+					<ul class="tab_dis5_uls">
+						<li>
+							<i><img src="img/18.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/19.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/20.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/21.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/22.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/12.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/13.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/14.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/11.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/12.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/13.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/14.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/11.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/12.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/13.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/14.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/11.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/12.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/13.jpg" alt=""></i>
+							<span class="copyright">独家</span>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/14.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span  class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</div>
+	<!-- tab栏图片 end -->
+	<!-- tab栏 时令食材  -->
+	<div class="w4">
+		<div class="ui_title4">
+			<div class="w3_1_ul4">
+				<ul class="tab_uls4">
+					<li class="tab_news44"><h2>时令食材</h2></li>
+					<p><a href="#">肉禽蛋</a></p>
+					<p style="margin-left: 70px;"><a href="#">水产品</a></p>
+					<p style="margin-left: 140px;"><a href="#">蔬菜</a></p>
+					<p style="margin-left: 190px;"><a href="#">米面豆乳</a></p>
+					<p style="margin-left: 280px;"><a href="#">菜谱首页</a></p>
+				</ul>
+			</div>
+			<section class="tab_footer4">
+				<div class="tab_dis4">
+					<ul class="tab_dis4_uls4">
+						<li>
+							<img src="img/sc1.jpg" alt="">
+							<p><a href="#">西兰花</a></p>
+							<span class="copyrightyh"><a href="#">蔬菜皇冠</a></span>
+						</li>
+						<li style="margin-left:18px;">
+							<img src="img/sc9.jpg" alt="">
+							<p><a href="#">茄子</a></p>
+							<span class="copyrightyh"><a href="#">微笑的的</a></span>
+						</li>
+						<li style="margin-left:18px;">
+							<img src="img/sc3.jpg" alt="">
+							<p><a href="#">生蚝</a></p>
+							<span class="copyrightyh"><a href="#">海中牛奶</a></span>
+						</li>
+						<li style="margin-left:18px;">
+							<img src="img/sc4.jpg" alt="">
+							<p><a href="#">生蚝</a></p>
+							<span class="copyrightyh"><a href="#">海中牛奶</a></span>
+						</li>
+						<li style="margin-left:18px;">
+							<img src="img/sc5.jpg" alt="">
+							<p><a href="#">生蚝</a></p>
+							<span class="copyrightyh"><a href="#">海中牛奶</a></span>
+						</li>
+						<li style="margin-left:18px;">
+							<img src="img/sc6.jpg" alt="">
+							<p><a href="#">猪里脊</a></p>
+							<span class="copyrightyh"><a href="#">超嫩小鲜肉</a></span>
+						</li>
+						<li style="margin-left:18px;">
+							<img src="img/sc7.jpg" alt="">
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<img src="img/sc8.jpg" alt="">
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:18px;">
+							<img src="img/sc9.jpg" alt="">
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:18px;">
+							<img src="img/sc10.jpg" alt="">
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:18px;">
+							<img src="img/sc12.jpg" alt="">
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:18px;">
+							<img src="img/sc14.jpg" alt="">
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li >
+						<li style="margin-left:18px;">
+							<img src="img/sc15.jpg" alt="">
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:18px;">
+							<img src="img/sc10.jpg" alt="">
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>					
+					</ul>
+				</div>
+			</section>
+
+		</div>
+	</div>
+	<!-- tab栏 时令食材end  -->
+	<!-- tabl栏 热门话题-->
+	<div class="w6">
+		<div class="ui_title6">
+			<div class="w3_1_ul6">
+				<ul class="tab_uls6">
+					<li class="tab_news6"><h2>话题热门</h2></li>
+					<li style="margin-left:30px;"><h2>精华日志</h2></li>
+					<p><a href="#">全部话题</a></p>
+					<p style="margin-left: 90px;"><a href="#">全部日志</a></p>
+					<p style="margin-left: 180px;"><a href="#">社区首页</a></p>
+				</ul>
+			</div>
+			<section class="tab_footer6">
+				<div class="tab_dis6">
+					<ul class="tab_dis6_uls6">
+						<li>
+							<div class="tab_dis6_uls6_div1">
+								<a href="html/usercenter.html"><img src="img/rp1.jpg" alt=""></a>
+								<p><a href="html/usercenter.html">雨中漫步_kRsJPX</a></p>
+								<span>1小时前</span>
+							</div>
+							<div class="tab_dis6_uls6_div2">
+								<a href="#">
+									<p><h5>#早上好吃饭了吗#</h5></p>
+									<span>#早餐#今日无早呢，看看果，心情不错呢😍</span>
+								</a>
+								<div class="tab_dis6_uls6_div2_img">
+									<img src="img/rp16.jpg" alt="">
+									<img src="img/rp12.jpg" alt="">
+									<img src="img/rp15.jpg" alt="">
+									<img src="" alt="">
+								</div>
+								<span>8个喜欢，6条评论</span>
+							</div>
+						</li>
+						<li style="margin-left:69px;">
+							<div class="tab_dis6_uls6_div1">
+								<a href="html/usercenter.html" title=""><img src="img/rp2.jpg" alt=""></a>
+								<p><a href="html/usercenter.html">雨中漫步_kRsJPX</a></p>
+								<span>1小时前</span>
+							</div>
+							<div class="tab_dis6_uls6_div2">
+								<a href="#">
+									<p><h5>#早上好吃饭了吗#</h5></p>
+									<span>#早餐#今日无早呢，看看果，心情不错呢😍</span>
+								</a>
+								<div class="tab_dis6_uls6_div2_img">
+									<img src="img/rp11.jpg" alt="">
+									<img src="img/rp18.jpg" alt="">
+									<img src="img/rp13.jpg" alt="">
+									<img src="img/rp22.jpg" alt="">
+								</div>
+								<span>8个喜欢，6条评论</span>
+							</div>
+						</li>
+						<li>
+							<div class="tab_dis6_uls6_div1">
+								<a href="html/usercenter.html" title=""><img src="img/rp3.jpg" alt=""></a>
+								<p><a href="html/usercenter.html">雨中漫步_kRsJPX</a></p>
+								<span>1小时前</span>
+							</div>
+							<div class="tab_dis6_uls6_div2">
+								<a href="#">
+									<p><h5>#早上好吃饭了吗#</h5></p>
+									<span>#早餐#今日无早呢，看看果，心情不错呢😍</span>
+								</a>
+								<div class="tab_dis6_uls6_div2_img">
+									<img src="img/rp11.jpg" alt="">
+									<img src="img/rp21.jpg" alt="">
+									<img src="img/rp13.jpg" alt="">
+									<img src="img/rp22.jpg" alt="">
+								</div>
+								<span>8个喜欢，6条评论</span>
+							</div>
+						</li>
+						<li style="margin-left:69px;">
+							<div class="tab_dis6_uls6_div1">
+								<a href="html/usercenter.html" title=""><img src="img/rp4.jpg" alt=""></a>
+								<p><a href="html/usercenter.html">雨中漫步_kRsJPX</a></p>
+								<span>1小时前</span>
+							</div>
+							<div class="tab_dis6_uls6_div2">
+								<a href="#">
+									<p><h5>#早上好吃饭了吗#</h5></p>
+									<span>#早餐#今日无早呢，看看果，心情不错呢😍</span>
+								</a>
+								<div class="tab_dis6_uls6_div2_img">
+									<img src="img/rp23.jpg" alt="">
+									<img src="img/rp12.jpg" alt="">
+									<img src="" alt="">
+									<img src="" alt="">
+								</div>
+								<span>8个喜欢，6条评论</span>
+							</div>
+						</li>
+						<li>
+							<div class="tab_dis6_uls6_div1">
+								<a href="html/usercenter.html" title=""><img src="img/rp1.jpg" alt=""></a>
+								<p><a href="html/usercenter.html">雨中漫步_kRsJPX</a></p>
+								<span>1小时前</span>
+							</div>
+							<div class="tab_dis6_uls6_div2">
+								<a href="#">
+									<p><h5>#早上好吃饭了吗#</h5></p>
+									<span>#早餐#今日无早呢，看看果，心情不错呢😍</span>
+								</a>
+								<div class="tab_dis6_uls6_div2_img">
+									<img src="img/rp24.jpg" alt="">
+									<img src="img/rp25.jpg" alt="">
+									<img src="img/rp27.jpg" alt="">
+									<img src="img/rp15.jpg" alt="">
+								</div>
+								<span>8个喜欢，6条评论</span>
+							</div>
+						</li>
+						<li style="margin-left:69px;">
+							<div class="tab_dis6_uls6_div1">
+								<a href="html/usercenter.html" title=""><img src="img/rp5.jpg" alt=""></a>
+								<p><a href="html/usercenter.html">雨中漫步_kRsJPX</a></p>
+								<span>1小时前</span>
+							</div>
+							<div class="tab_dis6_uls6_div2">
+								<a href="#">
+									<p><h5>#早上好吃饭了吗#</h5></p>
+									<span>#早餐#今日无早呢，看看果，心情不错呢😍</span>
+								</a>
+								<div class="tab_dis6_uls6_div2_img">
+									<img src="" alt="">
+									<img src="" alt="">
+									<img src="" alt="">
+									<img src="" alt="">
+								</div>
+								<span>8个喜欢，6条评论</span>
+							</div>
+						</li>
+						<li>
+							<div class="tab_dis6_uls6_div1">
+								<a href="html/usercenter.html" title=""><img src="img/rp5.jpg" alt=""></a>
+								<p><a href="html/usercenter.html">雨中漫步_kRsJPX</a></p>
+								<span>1小时前</span>
+							</div>
+							<div class="tab_dis6_uls6_div2">
+								<a href="#">
+									<p><h5>#早上好吃饭了吗#</h5></p>
+									<span>#早餐#今日无早呢，看看果，心情不错呢😍</span>
+								</a>
+								<div class="tab_dis6_uls6_div2_img">
+									<img src="img/rp11.jpg" alt="">
+									<img src="img/rp12.jpg" alt="">
+									<img src="img/rp13.jpg" alt="">
+									<img src="img/rp14.jpg" alt="">
+								</div>
+								<span>8个喜欢，6条评论</span>
+							</div>
+						</li>
+						<li style="margin-left:69px;">
+							<div class="tab_dis6_uls6_div1">
+								<a href="html/usercenter.html" title=""><img src="img/rp6.jpg" alt=""></a>
+								<p><a href="html/usercenter.html">雨中漫步_kRsJPX</a></p>
+								<span>1小时前</span>
+							</div>
+							<div class="tab_dis6_uls6_div2">
+								<a href="#">
+									<p><h5>#早上好吃饭了吗#</h5></p>
+									<span>#早餐#今日无早呢，看看果，心情不错呢😍</span>
+								</a>
+								<div class="tab_dis6_uls6_div2_img">
+									<img src="img/rp16.jpg" alt="">
+									<img src="img/rp12.jpg" alt="">
+									<img src="" alt="">
+									<img src="" alt="">
+								</div>
+								<span>8个喜欢，6条评论</span>
+							</div>
+						</li>
+						<li>
+							<div class="tab_dis6_uls6_div1">
+								<a href="html/usercenter.html" title=""><img src="img/rp7.jpg" alt=""></a>
+								<p><a href="html/usercenter.html">雨中漫步_kRsJPX</a></p>
+								<span>1小时前</span>
+							</div>
+							<div class="tab_dis6_uls6_div2">
+								<a href="#">
+									<p><h5>#早上好吃饭了吗#</h5></p>
+									<span>#早餐#今日无早呢，看看果，心情不错呢😍</span>
+								</a>
+								<div class="tab_dis6_uls6_div2_img">
+									<img src="img/rp27.jpg" alt="">
+									<img src="img/rp12.jpg" alt="">
+									<img src="" alt="">
+									<img src="img/rp14.jpg" alt="">
+								</div>
+								<span>8个喜欢，6条评论</span>
+							</div>
+						</li>
+						<li style="margin-left:69px;">
+							<div class="tab_dis6_uls6_div1">
+								<a href="html/usercenter.html" title=""><img src="img/rp8.jpg" alt=""></a>
+								<p><a href="html/usercenter.html">雨中漫步_kRsJPX</a></p>
+								<span>1小时前</span>
+							</div>
+							<div class="tab_dis6_uls6_div2">
+								<a href="#">
+									<p><h5>#早上好吃饭了吗#</h5></p>
+									<span>#早餐#今日无早呢，看看果，心情不错呢😍</span>
+								</a>
+								<div class="tab_dis6_uls6_div2_img">
+									<img src="img/rp23.jpg" alt="">
+									<img src="img/rp12.jpg" alt="">
+									<img src="img/rp13.jpg" alt="">
+									<img src="img/rp24.jpg" alt="">
+								</div>
+								<span>8个喜欢，6条评论</span>
+							</div>
+						</li>					
+					</ul>
+				</div>
+				<div>					
+					<ul class="tab_dis5_uls">
+						<li>
+							<i><img src="img/15.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/16.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/17.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/18.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/11.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/12.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/13.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/14.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/11.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/12.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/13.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/14.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/11.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;">
+							<i><img src="img/12.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li style="margin-left:23px;margin-right: 23px;">
+							<i><img src="img/13.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+						<li>
+							<i><img src="img/14.jpg" alt=""></i>
+							<p><a href="#">可乐鸡翅</a></p>
+							<span class="copyrightyh"><a href="#">隔断异常</a></span>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</div>
+	<!-- tabl栏 热门话题 end-->
+	<!-- 尾部  -->
+	<div class="footer-area clear">
+		<div class="footer-area-w">
+			<div class="ft1">
+				<p class="c3b"><a href="#" title="">美食天下 - 让吃更美好！</a></p>
+				<p class="c3c">
+				 	<a href="#" title="">关于我们</a> ·
+				 	<a href="#" title="">联系我们</a> ·
+				 	<a href="#" title="">加入我们</a> ·
+				 	<a href="#" title="">服务声明</a> ·
+				 	<a href="#" title="">友情链接</a> ·
+				 	<a href="#" title="">应用地图</a> ·
+				 	<a href="#" title="">移动应用</a>
+				</p>
+			</div>
+			<div class="ft4">
+				<img width="82" src="img/weixin.png" alt="" title="微信公众号">
+				微信公众号
+			</div>
+			<div class="ft3">
+				<img width="82" src="img/msc_app.png" alt="" title="手机客户端">
+				手机客户端
+			</div>
+			<div class="w_links">
+				<ul>
+					<li><strong>友情链接：</strong></li>
+					<li>
+						<a href="#" title="">愉悦妈妈</a>
+					</li>
+					<li>
+						<a href="#" title="">自游乐</a>
+					</li>
+					<li>
+						<a href="#" title="">爱奇艺生活</a>
+					</li>
+					<li>
+						<a href="#" title="">中华美食网</a>
+					</li>
+					<li>
+						<a href="#" title="">太平洋亲子网</a>
+					</li>
+					<li>
+						<a href="#" title="">美食杰</a>
+					</li>
+					<li>
+						<a href="#" title="">红餐网</a>
+					</li>
+					<li>
+						<a href="#" title="">食品商务网</a>
+					</li>
+					<li>
+						<a href="#" title="">妈妈网</a>
+					</li>
+					<li>
+						<a href="#" title="">亲宝网</a>
+					</li>
+					<li>
+						<a href="#" title="">6296网址大全</a>
+					</li>
+					<li>
+						<a href="#" title="">中国地图</a>
+					</li>
+					<li>
+						<a href="#" title="">三九养生堂</a>
+					</li>
+					<li>
+						<a href="#" title="">饭菜网</a>
+					</li>
+					<li>
+						<a href="#" title="">波奇网</a>
+					</li>
+					<li>
+						<a href="#" title="">糖豆网</a>
+					</li>
+					<li>
+						<a href="#" title="">慧聪网</a>
+					</li>
+					<li>
+						<a href="#" title="">企业服务平台</a>
+					</li>
+					<li>
+						<a href="#" title="">什么值得买</a>
+					</li>
+					<li>
+						<a href="#" title="">历史上的今天</a>
+					</li>
+					<li>
+						<a href="#" title="">农经网</a>
+					</li>
+					<li>
+						<a href="#" title="">885财经</a>
+					</li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+	<div class="footer-info">
+		<div class="footer-info-w">
+			<p>			
+			    版权所有 © 2004-2019 
+			    <a href="#" title="美食天下 - 让吃更美好！">美食天下</a>
+			    保留所有权利
+			    <img height="14" src="img/f1 (1).png" alt="">
+                 <a href="" title="">京公网安备 11010502031041号</a>
+                  / 京ICP证090244号 / 
+                  <a href="#" title="">京ICP备10020153号</a>
+			</p>
+			<div class="right">
+				<a href="#" title=""><img height="30" src="img/f1 (1).gif" alt=""></a>
+				&nbsp;&nbsp;
+				<a href="#" title=""><img src="img/f1 (2).png" alt=""></a>
+				<a href="#" title=""><img src="img/f1 (3).png" alt="" height="47"></a>		
+			</div>
+					
+		</div>		
+	</div>
+	<!-- 主体 end -->
+	<!-- 回到顶部 -->
+	<div class="gotop">
+		<a href="#"><img src="img/gotop.png" title="回到顶部"></a>
+	</div>
+	<!-- 回到顶部 end -->
+
+</body>
+</html>

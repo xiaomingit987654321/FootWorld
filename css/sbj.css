@@ -1,0 +1,1086 @@
+.*{
+    padding:0px;
+    margin: 0px;
+}
+.top-bar1{
+    height: 40px;
+    background: green;
+    color: #999;
+    top: 0;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    left: 0;
+    min-width: 990px;
+}
+
+
+/* 头部 */
+.w{
+    position: relative;
+    top:0px;
+    left: 0px;
+}
+.logo_wrap2 {
+    overflow: visible;
+    padding-top: 50px;
+    height: 65px;
+    margin: auto;
+    width: 990px;
+}
+.logo_wrap2 .logo_inner{
+    background: url(../img/logo.png) no-repeat scroll left center auto;
+    background: url(../img/logo.png) no-repeat scroll left center/108px auto;
+    width: 108px;
+}
+.left{
+    float: left;
+}
+
+.logo_wrap2 .logo_inner a{
+    display: block;
+    height: 60px;
+    overflow: hidden;
+    text-indent: -9999em;
+}
+a{
+    color:#333;
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo_wrap2 .logo_current{
+    height: 30px;
+    line-height: 30px;
+    margin: 15px 0 0 10px;
+    padding: 0 0 0 10px;
+} 
+h1{
+    font-size: 100%;
+    font-weight: 400px;
+    display: block;
+}
+.logo_wrap2 .logo_current a{
+    text-decoration:none;
+    color:#fff;
+    background:#ff838b;
+    border-radius: 5px;
+    font-size:20px;
+    padding:0px 10px;
+    display:block;
+}
+.right{
+    float:right;
+}
+.logo_wrap2 .logo_search{
+    padding-top:19px;
+}
+.logo_wrap2 .logo_search .search_Btn {
+    border-radius:0px 3px 3px 0px;
+    width: 80px;
+    height: 28px;
+    font-size: 14px;
+    color:#fff;
+    text-indent:35px;
+    line-height:28px;
+    background: #999 url(../img/search.png) no-repeat scroll 12px center/16px auto;
+    
+}
+.logo_wrap2 .logo_search .search_Btn:hover{
+     color: white;
+     background-color:#ff6767;
+}
+.logo_wrap2 .logo_search .search_Text{
+    width: 160px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 3px 0px 0px 3px;
+    height: 20px;
+    line-height: 20px;
+    padding: 3px;
+}
+.logo_nav{
+    float:right;
+    padding:0 40px 0px 0px;
+    height:40px;
+}
+.logo_nav a.on {
+    color: #ff6767;
+}
+.logo_nav a{
+    position: relative;
+    float: left;
+    padding: 0 10px 5px;
+    font-size: 20px;
+    line-height: 60px;
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+.logo_nav a:hover{
+    color: #ff6767;
+}
+.logo_nav a.on i{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
+    display: block;
+    overflow: hidden;
+    margin-left: -9px;
+    width: 0;
+    height: 0;
+    border: 9px dashed transparent;
+    border-bottom: 9px solid #ff6767;
+    font-style: normal;
+}
+.logo_nav a.on b {
+    position: absolute;
+    bottom: -1.3px;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    overflow: hidden;
+    margin-left: -9px;
+    width: 0;
+    height: 0;
+    border: 9px dashed transparent;
+    border-bottom: 9px solid #fff;
+    font-weight:400px;
+}
+.nav_wrap2{
+    padding:0px;
+    margin:0px;
+    height: 34px;
+    border-bottom:1px solid red;
+    border-top: 1px solid red;
+    margin: auto;
+    width: 990px;
+}
+ol,ul{
+    list-style: none;
+}
+.nav_wrap2 li{
+    float:left;
+    padding:0 10px;
+}
+.nav_wrap2 a.on{
+    color:#ff6767;
+}
+.nav_wrap2 a{
+    display: block;
+    padding: 0 3px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 34px;
+}
+.nav_wrap2 a:hover{
+     color: #ff6767;
+}
+.mt10{
+    margin-top: 10px;
+}
+.w{
+    width: 990px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.clear{
+    zoom:1px;
+}
+.i1{
+    background:url(../img/6.jpg) no-repeat center;
+}
+.wrap .w{
+   /*  height:2022px; */
+    background-color: #fff;
+    padding: 10px 0;
+}
+ul{
+    padding:0px;
+    margin:0px;
+}
+li{
+    float:left;
+    position:relative;
+}
+
+
+/* 三杯鸡做法 */
+.wrap11 .w11{
+     background-color:#fff;
+     padding:10px;
+     height:5700px;
+}
+.wrap11 .w11{
+    position:relative;
+    top：0px;
+    left:0px;
+}
+.wrap11 .w11{
+    width: 990px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.wrap11 .w11 .space_left11{
+    width: 640px;
+    float: left;
+    overflow: hidden;
+}
+.wrap11 .w11 .space_left11 #path1{
+    clear: both;
+    color:#111;
+}
+.wrap11 .w11 .space_left11 #path1 a{
+    color:#717174;
+    font-size: 12px;
+}
+.wrap11 .w11 .space_left11 #path1 .vest{
+    padding-right: 10px;
+}
+.wrap11 .clear11{
+    zoom:1px;
+}
+
+/* 三杯鸡左边的名称和右上角的小图像开始 */
+.user11{
+    padding:5px 0px 10px 0px;
+}
+.user11 h1{
+    float: left;
+    width: 535px;
+    line-height: 36px;
+    padding: 5px 0 0;
+}
+.user11 .recipe_title11 {
+    font-size: 32px;
+    text-decoration: none;
+    color: #333;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.user11 .mmc{
+    float: right;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100px;
+}
+.user11 a{
+    color: #111;
+    text-decoration: none; 
+}
+.user11 .mmc img{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 2px;
+}
+.user11 .mmc .name11{
+    font-size: 12px;
+}
+/* 三杯鸡左边的名称和右上角的小图像结束
+    background: url(../img/bglan_89.jpg);
+    background: url(../img/log_14fan.png) no-repeat scroll 30px -272px #000;
+
+ */
+
+
+
+/* 图片和文字 */
+.space_center22 .recipDetail22 .recipe_imgBox11{
+    background: url(../img/bglan_89.jpg);
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+ }
+.space_center22 .recipDetail22 .recipe_imgBox11 a{
+    text-decoration:none;
+    color:#333;
+}
+
+.recipe_imgBox11 .Jphoto11 img{
+    max-width: 100%;
+    border: 0;
+    vertical-align: middle; 
+}
+.recipe_imgBox11 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 46px;
+    color:#fff;
+    background: #000;
+    margin-left: -90px;
+    margin-top: -23px;
+    border-radius: 5px;
+    overflow: hidden;
+    display:none;
+}
+.space_center22 .recipDetail22 .recipe_imgBox11 .de_bg{
+    display: block;
+    float: left;
+    height: 100%;
+    background: url(../img/log_14fan.png) no-repeat scroll 30px -272px #000;
+    width: 80px;
+}
+.space_center22 .recipDetail22 .recipe_imgBox11 .de_photo{
+    display: block;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    padding-left: 73px;
+    letter-spacing: .1em;
+}
+.space_center22 .recipDetail22 .block_txt11{
+    margin:30px 0 0 0;
+    font-size:16px;
+}
+.space_center22 .recipDetail22 .block_txt11 .txt_tart{
+    font-size:40px;
+    font-family: "宋体","Hiragino Sans GB",STHeiti,"微软雅黑","Microsoft YaHei";
+    width:30px;
+    height:16px;
+    line-height:100%;
+    overflow:hidden;
+    color:#bfbfbf;
+    display:inline-block;
+    text-indent: -10px;
+}
+.space_center22 .recipDetail22 .block_txt11 .txt_end{
+    font-size:40px;
+    font-family: "宋体","Hiragino Sans GB",STHeiti,"微软雅黑","Microsoft YaHei";
+    width:30px;
+    height:16px;
+    line-height:100%;
+    overflow:hidden;
+    color:#bfbfbf;
+    display:inline-block;
+   
+}
+
+
+/* 食材明细 */
+.space_center22 .recipDetail22 .lnwei{
+    font-size: 20px;
+    color: #ff6767;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 20px 0 20px 25px;
+    background: rgba(0,0,0,0) url(../img/mo11111.png) no-repeat scroll left center;
+    margin-top:10px;
+}
+.space_center22 .recipDetail22 .lnwei h3{
+    font-size:100%;
+    font-weight:400px;
+}
+.zhuliao11{
+    border:1px solid #bfbfbf;
+    border-radius:10px;
+    padding: 0 0 10px 0;
+    margin: 0 0 15px 0; 
+ /*    padding: 5px 0 25px 0;
+ margin: -14px 0 36px 0; */
+}
+.zhuliao11 legend {
+    font-size: 16px;
+    margin: 0 35px;
+    padding: 0 10px;
+}
+.zhuliao11 .zhuliao22{
+    width:100%;
+    zoom:clear;
+}
+.zhuliao11 .zhuliao22 ul{
+    display: block;
+    float: left;
+    border-radius: 10px;
+}
+.zhuliao11 .zhuliao22 ul>li{
+    float: left;
+    width: 159px;
+    text-align: center;
+    height: 70px;
+    position: relative;
+}
+.zhuliao11 .zhuliao22 .cat11{
+    display: block;
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    line-height: 45px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #333;
+}
+.zhuliao11 .zhuliao22 .cat11:hover{
+    color:#ff6767;
+}
+.zhuliao11 .zhuliao22 .cat22{
+    color: #999;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+    text-align: center;
+    width: 84%;
+    margin: 0 auto;
+}
+
+
+.zhuliao33{
+    width:100%;
+    margin-top:20px;
+    zoom:1px;
+}
+.zhuliao33 ul{
+    display: block;
+    float: left;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.zhuliao33 li{
+    float: left;
+    width: 159px;
+    text-align: center;
+    height: 70px;
+    position: relative;
+}
+.zhuliao33 li .cat11{
+    display: block;
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    line-height: 45px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #666;
+}
+.zhuliao33 li .cat22{
+    color: #999;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+    text-align: center;
+    width: 84%;
+    margin: 0 auto;
+}
+
+
+/* 三杯鸡做法步骤 */
+.space_center22 .recipDetail22 .lnwei22 img{
+    font-size: 20px;
+    color: #ff6767;
+    font-size: 20px;
+    margin-top:35px;
+}
+.space_center22 .recipDetail22 .lnwei22 span{
+    font-size:20px;
+    font-weight: 700;
+    color: #ff6767;
+}
+.recipeStep li {
+    display: block;
+    margin: 0 0 40px 0;
+}
+.recipeStep li .recipeStep_img {
+    width: 240px;
+    display: inline-block;
+    zoom: 1;
+    position: relative;
+}
+.recipeStep li .recipeStep_img img {
+    margin-top:20px;
+    width: 220px;
+    background: url(../img/load.png) no-repeat scroll center center #f8f8f8;
+}
+.recipeStep li .recipeStep_word {
+    position: relative;
+    width: 390px;
+    display: inline-block;
+    zoom: 1;
+    font-size: 18px;
+}
+.recipeStep_num{
+    background-color: #ff6767;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    font-size: 18px;
+    height: 34px;
+    left: 0;
+    line-height: 34px;
+    position: absolute;
+    text-align: center;
+    top: -65px;
+    width: 34px;
+}
+.recipeStep_num:hover{
+    transition: 1s;
+    transform: rotate(360deg);
+}
+
+
+/* 小窍门 */
+.recipeTipww{
+    font-size:16px;
+}
+.wwl{
+    margin-top:16px;
+}
+
+.reciperzhi{
+    height:80px;
+}
+.reciperzhi .collect_da .iconfont {
+    color:red;
+    font-family: "iconfont" !important;
+    font-size: 18px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.reciperzhi ul li{
+    float: left;
+    margin-top:30px;
+    margin-left: 40px;
+    position: relative;
+}
+
+
+
+.zfdq{
+    height: 53px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    margin-top:20px;
+}
+.zfdq1{
+    line-height: 30px;
+    font-size: 20px;
+}
+.zfdq1 h3.on{
+    color: #ff6767;
+    border-bottom: 1px solid #ff6767;
+}
+.zfdq1 h3{
+    float: left;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #666;
+    padding-bottom: 4px;
+    outline: 0;
+    color: #333;
+    max-width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.zfdq1 .right {
+    float: right;
+    margin: 25px 0 0 20px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+
+/* 做法 */
+.left3_list{
+    height:500px;
+    width: 100%;
+    margin-top: 25px;
+}
+.left3_list ul{
+    display: block;
+    width: 666px;
+}
+.left3_list li{
+    float: left;
+    margin: 0 20px 0 0;
+    text-align: center;
+    width: 200px;
+    height: 215px;
+    overflow: hidden;
+}
+.left3_list li a {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    position: relative;
+}
+.left3_list li a:hover{
+    color:red;
+}
+.left3_list li a i {
+    display: block;
+    overflow: hidden;
+    width: 200px;
+}
+.left3_list li a img{
+    width:170px;
+}
+.left3_list li a img:hover{
+    transition: all .5s ease-in-out; 
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+.left3_list li a p{
+    font-size: 18px;
+    padding: -3px 0 2px;
+}
+.left3_list li a.u {
+    margin: auto;
+    color: #999;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+} 
+
+
+
+/* 评论框 */
+.mt30 {
+    height:700px;
+    margin-top: 40px;
+}
+.comment-post {
+    position: relative;
+    zoom: 1;
+}
+.comment-post .comment-add{
+    height:200px;
+}
+.comment-login {
+    height: 100%;
+    background: #ccc;
+    z-index: 101;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.comment-login, .comment-login-text, .comment-post-loading {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.comment-login-text {
+    z-index: 102;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 95px;
+}
+.comment-login, .comment-login-text, .comment-post-loading {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.comment-post-loading {
+    display: none;
+    z-index: 100;
+    height: 100%;
+    background: url(../img/loading-32-32.gif) center no-repeat;
+}
+.comment-login, .comment-login-text, .comment-post-loading {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.comment-post .arrow {
+    display: none;
+}
+.arrow {
+    display: block;
+    border: 5px dashed transparent;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+.comment-post-text {
+    border: 1px solid #ccc;
+    padding: 200px 0 5px 5px;
+    background-color: #fff;
+}
+.comment-post-text-inner {
+    width: 100%;
+}
+.comment-post-tools {
+    overflow: hidden;
+    height: 32px;
+    line-height: 32px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-top: 0;
+    font-size: 0;
+    zoom: 1;
+}
+.left {
+    float: left;
+}
+.comment-post-tools a, .comment-post-tools span {
+    display: inline-block;
+    font-size: 12px;
+}
+.comment-smilies-a {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/smilies-icon.gif);
+    margin: 3px 10px 0 3px;
+    border: 1px solid #eee;
+    vertical-align: top;
+}
+.comment-post-tools .tips {
+    color: #999;
+}
+.comment-post-tools a, .comment-post-tools span {
+    display: inline-block;
+    font-size: 12px;
+}
+.right {
+    float: right;
+}
+.comment-post-tools .comment-btn {
+    background: #ff6767;
+}
+.comment-post-tools .comment-btn {
+    background-color: #ba2020;
+    padding: 0 26px;
+    color: #fff;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+    vertical-align: top;
+}
+.comment-post-tools a, .comment-post-tools span {
+    display: inline-block;
+    font-size: 12px;
+}
+.comment-login-text a {
+    color: #069;
+    padding-right: 6px;
+}
+
+
+
+/* 右边 */
+.space_right{
+    float:right;
+    width: 300px;
+    overflow: hidden;
+}
+.space_right .kokl{
+    margin-top:50px;
+}
+.space_right .kokl img{
+    height:250px;
+    width:300px;
+}
+.ui_title{
+    height: 52px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    margin-top:20px;
+    zoom:1px;
+}
+.ui_title_wrap{
+    line-height: 30px;
+    font-size: 20px;
+}
+.ui_title_wrap h3.on{
+    color: #ff6767;
+    border-bottom: 3px solid #ff6767;
+}
+ .ui_title_wrap h3{
+    float: left;
+    font-weight: 400px;
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #666;
+    padding-bottom: 4px;
+    outline: 0;
+    color: #333;
+    max-width: 100%;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ui_title_wrap .right{
+    float: right;
+    margin: 20px 0 0 20px;
+    font-size: 16px;
+}
+
+.space_right .gongxiao_rlan{
+    width:100%;
+    overflow:hidden;
+}
+.space_right .gongxiao_rlan .rlan{
+    width:333px;
+    overflow:hidden;
+}
+.gongxiao_rlan .rlan a{
+    float: left;
+    width: 88px;
+    border: 1px solid #eee;
+    margin: 15px 15px 0 0;
+    text-align: center;
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.gongxiao_rlan .rlan a:hover{
+    color:#ff6767;
+}
+
+
+/* 本菜谱被以下菜单收录 */
+.space_right .recipe_rlistlan{
+    width:300px;
+    height:417px;
+}
+.recipe_rlistlan li{
+    width:300px;
+    height: 60px;
+    padding: 15px 0 0 0;
+    clear: both;
+}
+.recipe_rlistlan .classlan{
+    display:block;
+    height:100%;
+}
+.recipe_rlistlan .classlan img{
+    float: left;
+    width:60px;
+    height:60px;
+    margin:0 15px 0 0;
+}
+.recipe_rlistlan .classlan p{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.recipe_rlistlan .classlan .t3{
+    font-size:16px;
+}
+.recipe_rlistlan .classlan .t3:hover{
+    color:#ff6767;
+}
+.recipe_rlistlan .classlan .t2{
+    font-size:14px;
+    padding:0;
+    color: #666;
+}
+
+
+
+
+
+/* 最新评论 */
+.comment-nav{
+    overflow: hidden;
+    height: 30px;
+    border-left: 2px solid #ba2020;
+    padding-left: 10px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.comment-nav .left{
+    font-size: 16px;
+    float: left;
+}
+.comment-nav strong{
+    color: #666;
+    font-weight: bold;
+}
+.comment-cid a{
+    display: block;
+    height: 40px;
+}
+.comment-cid a:hover{
+    background-color:#ba2020;
+    color:white;
+}
+.comment-cid a,.comment-loading{
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+.comment-list{
+    margin-top: 20px;
+}
+.comment-list .data-error {
+    display: none;
+    font-size: 14px;
+    line-height: 30px;
+}
+.comment-cid a, .comment-loading{
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+.comment-list li {
+    width:640px;
+    height:90px;
+    overflow: hidden;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 10px 0;
+    position: relative;
+    background-color: #fff;
+    vertical-align: top;
+    zoom: 1;
+}
+.comment-list .pic {
+    width: 48px;
+    float: left;
+}
+.comment-list .pic a{
+    display: block;
+}
+.comment-list .pic img{
+    border-radius: 50%;
+}
+.comment-list .detail {
+    padding-left: 58px;
+}
+.comment-list .tools {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    zoom: 1;
+}
+.detail .left{
+    float: left;
+}
+.comment-list .tools div.left>a {
+    color: #6599ff;
+}
+.comment-list .tools span {
+    color: #666;
+    padding-left: 10px;
+}
+.detail .right{
+    float: right;
+}
+.comment-list .tools .right a {
+    padding-left: 10px;
+}
+.comment-list .content {
+    padding-top: 5px;
+    font-size: 14px;
+}
+.comment-list .quote {
+    border-left: 3px solid #f0f0f0;
+    padding-left: 3px;
+    margin-bottom: 6px;
+}
+.comment-befrom {
+    padding-top: 5px;
+    color: #999;
+    font-size: 11px;
+}
+.comment-befrom a {
+    color: #999;
+}
+
+
+
+/* 底部 */
+.foot{
+    height:150px;
+     padding: 26px 0; 
+}
+.foot .w{
+    height:150px;
+    padding-top: 10px;
+    border-top: 1px solid #e8e8e8;
+}
+.foot1{
+    clear: none;
+    float: left;
+    font-size: 11px;
+    color: #666;
+    width: 680px;
+    padding-top: 10px;
+}
+.foot1 .b{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.foot1 .b a{
+    color: #ffa859;
+}
+.foot1 .b a:hover{
+    color: #ff6767;
+}
+.foot1 .c{
+    color: #aaa;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+.foot2{
+    clear: none;
+    float: right;
+    text-align: center;
+    margin: 10px 0;
+}
+.foot2 img{
+    width: 82px;
+}
+.foot3{
+    padding: 0 10px;
+}
+
+
+
+/* 回到顶部 */
+.fixed-footer{
+    position: fixed;
+    bottom: 10px;
+    left: -9999px;
+    z-index: 102410;
+    height: 58px;
+}
+.fixed-footer-go{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline;
+    width: 58px;
+    height: 58px;
+    background: url(../img/gotop.png) no-repeat scroll center center/58px 58px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>活动</title>
+		<link rel="stylesheet" href="../css/shequ.css">
+		<link rel="stylesheet" href="../css/login.css">
+		<link rel="stylesheet" href="../css/navigbar.css">
+		<link rel="stylesheet" href="../css/register.css">
+		<script src="../js/jquery-3.4.1.js"></script>
+		<script src="../js/navigbar.js"></script>
+		<script src="../js/shequ.js"></script>
+
+	</head>
+	<body>
+		<!-- 导航条开始 -->
+		<div class="top-bar">
+			<ul class="bar-left left">
+				<li style="width:80px;"><i>美食天下</i></li>
+				<li><a title="首页" href="../index.html" >首页</a></li>
+				<li><a title="菜谱" href="cookbook.html">菜谱</a></li>
+				<li><a title="食材" href="scdq.html">食材</a></li>
+				<li><a title="珍选" href="#">珍选</a></li>
+				<li><a title="健康" href="#">健康</a></li>
+				<li><a title="专题" href="subject.html">专题</a></li>
+				<li><a title="社区" href="footbbs.html">社区</a></li>
+				<li><a title="话题" href="#">话题</a></li>
+				<li><a title="活动" href="shequ.html">活动</a></li>
+				<li><a title="搜索" href="#">搜索</a></li>
+				<li class="top_bar_more"><i>更多</i>
+				  <div class="top_bar_more_xl">
+					  <a title="烘焙" href="bake.html">烘焙</a>
+					  <a title="妈妈派" href="#">妈妈派</a>
+				  </div>
+			  	</li>
+			</ul>
+			<div class="right">
+				<ul class="bar-noLogin" id="J_barUser">
+					<li><a title="注册" href="register.html">注册</a></li>
+					<li><a title="登录" href="login.html">登录</a></li>
+					<li id="bar-text-lis">
+						<div class="bar-text">
+							<img width="18" height="18" src="../img/nir1.png" alt="">
+							<p>QQ登录</p>
+						</div>
+						<div class="bar-box">						 						  
+						  <ul>
+						  	<li class="bar-box-item-wb">
+								<img width="18" height="18" src="../img/nir2.png" alt="">
+						  		<p>微博登录</p>
+						  	</li>
+						  	<li class="bar-box-item-wx">
+						  		<img width="18" height="18" src="../img/nir3.png" alt="">
+						  	    <p>微信登录</p>
+						  	</li>
+						  </ul>
+					  	</div>
+					</li>
+					<li id="bar-text-lifb">
+						<div class="bar-textfb">
+							<img width="18" height="18" src="../img/nr1.png" alt="">
+							<p>发布</p>
+						</div>
+						<div class="bar-boxfb">						 						  
+						  <ul>
+						  	<li class="bar-box-item-0">
+						  		<p>发菜谱</p>
+						  	</li>
+						  	<li class="bar-box-item-1">						  		
+						  	    <p>发话题</p>
+						  	</li>
+						  	<li class="bar-box-item-2">
+						  	    <p>发日志</p>
+						  	</li>
+						  </ul>
+					  	</div>
+					</li>
+
+					<li>
+						<div class="bar-textqdyli">
+							<img width="18" height="18" src="../img/nr2.png" alt="">
+							<p>签到有礼</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="bar-textkhd">
+							<img width="18" height="18" src="../img/nr3.png" alt="">
+							<p>客户端</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 导航条结束 -->
+
+		<!-- 导航条2结束 -->
+		<div class="w logo_wrap2">
+			<div class="logo_inner left">
+			   <a href="#" title="美食天下">美食天下</a>
+			</div>
+			<div class="logo_current left">
+				<h1><a href="#" title="食材">活动</a></h1>
+			</div>
+			<div class="logo_search right">
+				<div class="searchBox J_search">
+					<a href="javascript;" title="搜索" class="search_Btn J_searchBTN right" id="search">
+					搜索</a>
+					<input type="text" id="q" class="search_Text J_searchTxt right">
+				</div>
+			</div>
+
+			<div class="logo_nav">
+				<a class="on" href="#" title="食材分类">食材分类<i></i><b></b></a>
+				<a href="#" title="营养排行">营养排行<i></i><b></b></a>
+				<span style="float: left; height:18px; margin:23px 4px 0; border-right: 1px solid #ddd;"></span>
+				<a href="#" target="_blank" title="食疗食补">食疗食补</a>
+			</div>
+		</div>
+
+		<div class="w nav_wrap2">
+			<ul>
+				<li><a class="on"  href="#" title="首页">全部福利</a></li>
+				<li><a href="#" title="肉禽类">线上活动</a></li>
+				<li><a href="#" title="水产品">线下活动</a></li>
+				<li><a href="#" title="蔬菜">免费抽奖</a></li>
+			</ul>
+		</div>
+
+		<div class="w mt10 clear" style="height:90px;overflow:hidden;">
+			<div class="i1"><a href="dkjf.html"><img src="../img/5.jpg" alt=""></a></div>
+		</div>
+		<!-- 导航条2结束 -->
+
+		<!-- 抽奖开始 -->
+		<div class="wraplan">
+			<div class="wlan">
+
+				<div class="space_right">
+					<div class="mtlan">
+						<a href="#" target="_blank">
+							<!-- (写jq)<script src="//hm.baidu.com/hm.js?fb9cd9dcdda23cee0c7357db9be24acb"></script> -->
+							<img width="300" height="600" src="../img/r5.png" class="imgLoad" style="display: block;">
+							<img width="300" height="600" src="../img/r5.png" class="imgLoad" style="display: block;margin-top:30px;">
+							<img width="300" height="600" src="../img/r5.png" class="imgLoad" style="display: block;margin-top:30px;">
+							<img width="300" height="600" src="../img/r5.png" class="imgLoad" style="display: block;margin-top:30px;">
+						</a>
+					</div>
+				</div>
+
+				<div class="space_left">
+					<div class="ui_title_lan">
+						<div class="ui_title_wlan">
+							<h2 class="hf">免费抽奖</h2>
+							<a href="#" class="rightww" target="_blank">更多</a>
+						</div>
+					</div>
+
+					<div class="ui_lottery_lan mtlan">
+						<ul>
+							<li>
+								<div class="pic">
+									<a href="mfcj.html">
+										<img width="192" height="192" src="../img/ddlan.png" class="imgLoad" style="display: block;">
+									</a>
+									<div>立即抽奖</div>
+								</div>
+								<div class="detail">
+									<h2>
+										<a href="#">
+										ACA电动打蛋器(AHM-P125A)
+										</a>
+									</h2>
+									<p class="subline"><span style="text-decoration:line-through;">￥79.00</span></p>
+									<a href="#" class="do_luck">
+									立即抽奖
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#">
+										<i>
+											<img width="192" height="192" src="../img/ddlan.png" class="imgLoad" style="display: block;">
+										</i>
+										
+									</a>
+								</div>
+								<div class="detail">
+									<h2>
+										<a href="#">
+									ACA电动打蛋器(AHM-P125A)
+										</a>
+									</h2>
+									<p class="subline"><span style="text-decoration:line-through;">￥79.00</span></p>
+									<a href="javascript:void(0);" class="gray">
+									已结束
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#">
+										<img width="192" height="192" src="../img/ddlan.png" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detail">
+									<h2>
+										<a href="#">
+									ACA电动打蛋器(AHM-P125A)
+										</a>
+								</h2>
+								<p class="subline"><span style="text-decoration:line-through;">￥79.00</span></p>
+								<a href="javascript:void(0);" class="gray">
+								已结束
+								</a>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#/">
+										<img width="192" height="192" src="../img/ddlan.png" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detail">
+									<h2>
+										<a href="#">
+									ACA电动打蛋器(AHM-P125A)
+										</a>
+									</h2>
+									<p class="subline"><span style="text-decoration:line-through;">￥79.00</span></p>
+									<a href="javascript:void(0);" class="gray">
+									已结束
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#">
+										<img width="192" height="192" src="../img/ddlan.png" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detail">
+									<h2>
+										<a href="#">
+									ACA电动打蛋器(AHM-P125A)
+										</a>
+									</h2>
+									<p class="subline"><span style="text-decoration:line-through;">￥79.00</span></p>
+									<a href="javascript:void(0);" class="gray">
+									已结束
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#">
+										<img width="192" height="192" src="../img/ddlan.png" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detail">
+									<h2>
+										<a href="#">
+									ACA电动打蛋器(AHM-P125A)
+										</a>
+									</h2>
+									<p class="subline"><span style="text-decoration:line-through;">￥79.00</span></p>
+									<a href="javascript:void(0);" class="gray">
+									已结束
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="space_left">
+					<div class="ui_title_lan">
+						<div class="ui_title_wlan">
+							<h2 class="hf">美粒兑换</h2>
+							<a href="#" class="rightww" target="_blank">更多</a>
+						</div>
+					</div>
+
+					<div class="ui_lottery_lan mtlan">
+						<ul>
+							<li>
+								<div class="pic">
+									<a href="#">
+										<img width="192" height="192" src="../img/dh1.gif" class="imgLoad" style="display: block;">
+									</a>
+									<div>立即兑换</div>
+								</div>
+								<div class="detail">
+									<h2>
+										<a href="#">
+										海尔智能嫩烤箱
+										</a>
+									</h2>
+									<p class="subline"><span>剩余10件</span></p>
+									<a href="#" class="do_luck">
+									立即兑换
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#">
+										<img width="192" height="192" src="../img/dh2.gif" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detail">
+									<h2>
+										<a href="#">
+									ACA多功能厨师机
+										</a>
+									</h2>
+									<p class="subline"><span>剩余38件</span></p>
+									<a href="#" class="do_luck">
+									立即兑换
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#">
+										<img width="192" height="192" src="../img/dh3.gif" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detail">
+									<h2>
+										<a href="#">
+									百度糯米50元卡
+										</a>
+									</h2>
+									<p class="subline"><span>剩余93件</span></p>
+									<a href="#" class="do_luck">
+									立即兑换
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#">
+										<img width="192" height="192" src="../img/dh4.gif" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detail">
+									<h2>
+										<a href="#">
+									ACA电动打蛋器(AHM-P125A)
+										</a>
+									</h2>
+									<p class="subline"><span>剩余28件</span></p>
+									<a href="#" class="do_luck">
+									立即兑换
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#">
+										<img width="192" height="192" src="../img/dh5.gif" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detail">
+									<h2>
+										<a href="#">
+									五常大米（10斤装）
+										</a>
+									</h2>
+									<p class="subline"><span>剩余36件</span></p>
+									<a href="#" class="do_luck">
+									立即兑换
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="pic">
+									<a href="#">
+										<img width="192" height="192" src="../img/dh6.png" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detail">
+									<h2>
+										<a href="#">
+									百度糯米100元充值卡
+										</a>
+									</h2>
+									<p class="subline"><span>剩余45件</span></p>
+									<a href="#" class="do_luck">
+									立即兑换
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="space_left">
+					<div class="ui_title_lan">
+						<div class="ui_title_wlan">
+							<h2 class="hf">线上活动</h2>
+							<a href="#" class="rightww" target="_blank">更多</a>
+						</div>
+					</div>
+					<div class="ui_newlist_lan mtt10">
+						<ul>
+							<li>
+								<div class="pic1">
+									<a href="#" target="_blank" title="你最喜爱的家常下饭菜">
+										<img width="180" height="180" src="../img/lzf1.jpg" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detail1">
+									<h2>
+										<a href="#" target="_blank" title="你最喜爱的家常下饭菜">
+											<span>[话题征集]</span> 你最喜爱的家常下饭菜
+										</a>
+									</h2>
+									<p class="subline">2019年9月05日-2019年10月07日</p>
+									<p class="subcontent">柴米油盐的生活，餐桌上也总是少不了高频出现的可口饭菜，你对于好菜的标准是什么？精致的摆盘？色香味俱全？我个人的评判标准比较简单，就是吃了之后让你食欲大开，能吃到饱的就是好菜！它可能...</p>
+									<a href="#" target="_blank" title="你最喜爱的家常下饭菜" class="do_luck">
+									活动正在进行
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="pic1">
+									<a href="#" target="_blank" title="你最喜爱的家常下饭菜">
+										<img width="180" height="180" src="../img/lzf4.jpg" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detail1">
+									<h2>
+										<a href="#" target="_blank" title="你最喜爱的家常下饭菜">
+											<span>[话题征集]</span> 万物复苏的季节
+										</a>
+									</h2>
+									<p class="subline">2019年9月05日-2019年10月07日</p>
+									<p class="subcontent">阳春三月，草木发芽。正是万物复苏的季节，有很多美味而有营养的时令菜新鲜上市，也是一年之中，野菜最鲜美的时刻。众所周知，时令蔬菜就是在当季节顺应自然规律生长的菜，这样的蔬菜营养更全面.它们有着各自妙用，也有着不同的烹饪方法。快来分享你的春季时令菜谱，让大家尝尝鲜吧～...</p>
+									<a href="#" target="_blank" title="你最喜爱的家常下饭菜" class="do_luck">
+									活动正在进行
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="pic1">
+									<a href="#" target="_blank" title="你最喜爱的家常下饭菜">
+										<img width="180" height="180" src="../img/lzf2.jpg" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detail1">
+									<h2>
+										<a href="#" target="_blank" title="你最喜爱的家常下饭菜">
+											<span>[话题征集]</span> 餐桌上的魔法·超萌卡通餐
+										</a>
+									</h2>
+									<p class="subline">2019年5月28日-2019年6月11日</p>
+									<p class="subcontent">孩子长身体的时候，平衡饮食很重要。但很多小朋友挑食、不爱吃饭真是难倒了宝爸宝妈们。其实，对付不喜欢吃饭的小朋友，最好用的方法就是把饭菜做得好看了！尝试换着花样把饭菜做成小动物、卡通...</p>
+									<a href="#" target="_blank" title="你最喜爱的家常下饭菜" class="gray">
+									已经结束
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="pic1">
+									<a href="#" target="_blank" title="你最喜爱的家常下饭菜">
+										<img width="180" height="180" src="../img/lzf3.jpg" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detail1">
+									<h2>
+										<a href="#" target="_blank" title="你最喜爱的家常下饭菜">
+											<span>[话题征集]</span> 晒晒我爱吃的零食
+										</a>
+									</h2>
+									<p class="subline">2019年5月16日-2019年5月27日</p>
+									<p class="subcontent">不知道从什么时候开始，总是喜欢在没事的时候手里有一些小吃食，这样才觉得有安全感...说白了就是嘴巴停不下来！世间唯有美食与爱不可辜负，除了爱，能治愈我们的也就当属食物了～如果能吃着...</p>
+									<a href="#" target="_blank" title="你最喜爱的家常下饭菜" class="gray">
+									已经结束
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+
+				<div class="space_left">
+					<div class="ui_title_lan">
+						<div class="ui_title_wlan">
+							<h2 class="hf">任务奖励</h2>
+							<a href="#" class="rightww" target="_blank">更多</a>
+						</div>
+					</div>
+					<div class="ui_lan mmmf">
+						<ul>
+							<li>
+								<div class="piclan">
+									<a href="#" class="show_tip">
+										<img width="70" height="70" src="../img/jllan1.png" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detaillan">
+									<h2>
+										<a href="#" class="show_tip">上传高清头像</a>
+									</h2>
+									<p class="subline">清晰的头像能让大家快速认识你</p>
+									<div class="award">
+										成长值&nbsp;<span>+5</span>;幸运草&nbsp;<span>+5</span>
+									</div>
+									<a href="javascript:void(0);" class="jiangli">
+										领取奖励
+									</a>
+								</div>
+							</li>
+							
+							<li>
+								<div class="piclan">
+									<a href="#" class="show_tip">
+										<img width="70" height="70" src="../img/jllan3.png" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detaillan">
+									<h2>
+										<a href="#" class="show_tip">超下饭的私房菜</a>
+									</h2>
+									<p class="subline"2019年09月20日 - 10月05日</p>
+									<div class="award">
+										成长值&nbsp;<span>+5</span>;幸运草&nbsp;<span>+5</span>
+									</div>
+									<a href="javascript:void(0);" class="jiangli">
+										领取奖励
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="piclan">
+									<a href="#" class="show_tip">
+										<img width="70" height="70" src="../img/jllan4.png" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detaillan">
+									<h2>
+										<a href="#" class="show_tip">关注10位好友</a>
+									</h2>
+									<p class="subline">关注后可直接查看好友动态</p>
+									<div class="award">
+										成长值&nbsp;<span>+5</span>;幸运草&nbsp;<span>+5</span>
+									</div>
+									<a href="javascript:void(0);" class="jiangli">
+										领取奖励
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="piclan">
+									<a href="#" class="show_tip">
+										<img width="70" height="70" src="../img/jllan5.png" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detaillan">
+									<h2>
+										<a href="#" class="show_tip">在福利社中抽奖一次</a>
+									</h2>
+									<p class="subline">2019年09月12日 - 09月27日</p>
+									<div class="award">
+										成长值&nbsp;<span>+5</span>;幸运草&nbsp;<span>+5</span>
+									</div>
+									<a href="javascript:void(0);" class="jiangli">
+										领取奖励
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="piclan">
+									<a href="#" class="show_tip">
+										<img width="70" height="70" src="../img/jllan6.png" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detaillan">
+									<h2>
+										<a href="#" class="show_tip">第一次在福利社中签到</a>
+									</h2>
+									<p class="subline">签到得幸运草可以免费抽奖</p>
+									<div class="award">
+										成长值&nbsp;<span>+5</span>;幸运草&nbsp;<span>+5</span>
+									</div>
+									<a href="javascript:void(0);" class="jiangli">
+										领取奖励
+									</a>
+								</div>
+							</li>
+							<li>
+								<div class="piclan">
+									<a href="#" class="show_tip">
+										<img width="70" height="70" src="../img/jllan2.png" class="imgLoad" style="display: block;">
+									</a>
+								</div>
+								<div class="detaillan">
+									<h2>
+										<a href="#" class="show_tip">白米饭吃出花样来！</a>
+									</h2>
+									<p class="subline">2019年09月12日 - 09月27日</p>
+									<div class="award">
+										成长值&nbsp;<span>+5</span>;幸运草&nbsp;<span>+5</span>
+									</div>
+									<a href="javascript:void(0);" class="jiangli">
+										领取奖励
+									</a>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 抽奖结束 -->
+
+ 		
+		<div class="footer-areas">
+			<div class="ws">
+				<div class="ft11">
+					<p class="ft11_c3b">
+						<a href="#">美食天下 - 让吃更美好！</a>
+					</p>
+					<p class="ft11_c2c">
+						<a href="#">菜谱</a> ·
+						<a href="#">食材</a> ·
+						<a href="#">魔方</a> ·
+						<a href="#">关于我们</a> ·
+						<a href="#">联系我们</a> ·
+						<a href="#">加入我们</a> ·
+						<a href="#">服务声明</a> ·
+						<a href="#">友情链接</a> ·
+						<a href="#">服务声明</a> ·
+						<a href="#">网络地图</a> ·
+						<a href="#">移动应用</a> 
+					</p>
+					<p>? 2004-2019 美食天下 保留所有权利 - 京ICP证090244号</p>
+				</div>
+				<div class="ft12">
+					<img width="82" src="../img/weixin.png" alt="">
+					微信公众号
+				</div>
+				<div class="ft13">
+					<img width="82" src="../img/msc_app.png" alt="">
+					手机客户端
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 回到顶部开始 -->
+		<div class="fixed-footer" style="left: 1179.5px; right: auto; bottom: 10px;">
+			<a href="javascript:;" title="点击返回页面顶部" onclick="window.scrollTo(0,0);" class="fixed-footer-go" style="display: none;">
+			</a>
+	   </div>
+		<!-- 回到顶部结束 -->
+
+
+	</body>
+</html>

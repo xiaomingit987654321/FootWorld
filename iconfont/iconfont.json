@@ -1,0 +1,58 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "700817",
+      "name": "向右",
+      "font_class": "xiangyou",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "976025",
+      "name": "糖",
+      "font_class": "tang",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "1490622",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "5193476",
+      "name": "西红柿",
+      "font_class": "xihongshi",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "8348117",
+      "name": "菜单",
+      "font_class": "caidan1",
+      "unicode": "e718",
+      "unicode_decimal": 59160
+    },
+    {
+      "icon_id": "8575170",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "8843664",
+      "name": "向左",
+      "font_class": "xiangzuo",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    }
+  ]
+}

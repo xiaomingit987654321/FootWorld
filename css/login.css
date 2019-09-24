@@ -1,0 +1,153 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+.loginbox {
+    width: 530px;
+    position: absolute;
+    margin: -180px 0 0 -265px;
+    top: 50%;
+    left: 50%;
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #333;
+    background: rgba(255,255,255,0.8);
+}
+.loginbox_h {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+.loginbox_h_left{
+	width: 265px;
+	height:50px;
+	float:left;
+    cursor:pointer;
+}
+.loginbox_h_right{
+	width: 265px;
+	height:50px;
+	float: right;
+    cursor:pointer;
+}
+.loginbox_h_right a{
+    text-decoration:none;
+}
+.loginbox_h_left a{
+    text-decoration:none;
+
+}
+
+.loginbox_h_right a:hover{
+    color:tomato;
+    text-decoration:block;
+}
+.loginbox_h_left a:hover{
+    color:tomato;
+    text-decoration:block;
+
+}
+
+.loginbox_c {
+    float:left;
+    height: 250px;
+}
+.loginbox_l {
+    float: left;
+    width: 300px;
+    padding: 20px;
+    border-right: 1px solid #999;
+    margin: 20px 0 0;
+}
+.loginbox_l ul {
+	list-style: none;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+.loginbox_l ul li {
+    border-bottom: 1px solid #999;
+    height: 32px;
+    line-height: 32px;
+}
+.loginbox_l ul li label {
+    padding: 0 5px 0 10px;
+}
+.loginbox_l ul li input{
+    width: 185px;
+    height:30px;
+    border: 0;
+    font-size: 16px;
+    background: rgba(0,0,0,0);
+}
+.loginbox_l ul li input:focus{
+    outline:none;
+}
+.loginbox_l p {
+    padding: 10px 0;
+}
+.clear {
+    zoom: 1;
+}
+.clear label{
+    margin-left: 23px;
+}
+.loginbox_l p label {
+    float: left;    
+}
+.loginbox_l p a {
+    text-decoration: underline;
+}
+.loginbox a {
+    color: #333;
+}
+.rightmm {
+    float: right;
+    margin-right: 23px;
+}
+.loginbtn {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    background: #ff6767;
+    color: #fff;
+    font-size: 18px;
+    width: 90%;
+    text-align: center;
+    border: 0;
+    cursor: pointer;
+    margin: 15px 0 0 18px;
+}
+.loginbox_r {
+    float: left;
+    width: 165px;
+    text-align: center;
+    margin: 10px;
+}
+.loginbox_r p{
+	margin:5px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

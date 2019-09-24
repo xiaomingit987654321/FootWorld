@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>专题</title>
+	<link rel="stylesheet" href="../css/navigbar.css">
+	<link rel="stylesheet" href="../css/subject.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src='../js/navigbar.js'></script>
+	<script src="../js/subject.js"></script>
+</head>
+<body>
+	<!-- 导航条开始 -->
+	<div class="top-bar">
+		<ul class="bar-left left">
+			<li style="width:80px;"><i>美食天下</i></li>
+			<li><a title="首页" href="../index.html" >首页</a></li>
+			<li><a title="菜谱" href="cookbook.html">菜谱</a></li>
+			<li><a title="食材" href="scdq.html">食材</a></li>
+			<li><a title="珍选" href="#">珍选</a></li>
+			<li><a title="健康" href="#">健康</a></li>
+			<li><a title="专题" href="subject.html">专题</a></li>
+			<li><a title="社区" href="footbbs.html">社区</a></li>
+			<li><a title="话题" href="#">话题</a></li>
+			<li><a title="活动" href="shequ.html">活动</a></li>
+			<li><a title="搜索" href="#">搜索</a></li>
+			<li class="top_bar_more"><i>更多</i>
+			  <div class="top_bar_more_xl">
+				  <a title="烘焙" href="bake.html">烘焙</a>
+				  <a title="妈妈派" href="#">妈妈派</a>
+			  </div>
+		  	</li>
+		</ul>
+		<div class="right">
+			<ul class="bar-noLogin" id="J_barUser">
+				<li><a title="注册" href="register.html">注册</a></li>
+				<li><a title="登录" href="login.html">登录</a></li>
+				<li id="bar-text-lis">
+					<div class="bar-text">
+						<img width="18" height="18" src="../img/nir1.png" alt="">
+						<p>QQ登录</p>
+					</div>
+					<div class="bar-box">						 						  
+					  <ul>
+					  	<li class="bar-box-item-wb">
+							<img width="18" height="18" src="../img/nir2.png" alt="">
+					  		<p>微博登录</p>
+					  	</li>
+					  	<li class="bar-box-item-wx">
+					  		<img width="18" height="18" src="../img/nir3.png" alt="">
+					  	    <p>微信登录</p>
+					  	</li>
+					  </ul>
+				  	</div>
+				</li>
+				<li id="bar-text-lifb">
+					<div class="bar-textfb">
+						<img width="18" height="18" src="../img/nr1.png" alt="">
+						<p>发布</p>
+					</div>
+					<div class="bar-boxfb">						 						  
+					  <ul>
+					  	<li class="bar-box-item-0">
+					  		<p>发菜谱</p>
+					  	</li>
+					  	<li class="bar-box-item-1">						  		
+					  	    <p>发话题</p>
+					  	</li>
+					  	<li class="bar-box-item-2">
+					  	    <p>发日志</p>
+					  	</li>
+					  </ul>
+				  	</div>
+				</li>
+
+				<li>
+					<div class="bar-textqdyli">
+						<img width="18" height="18" src="../img/nr2.png" alt="">
+						<p>签到有礼</p>
+					</div>
+				</li>
+
+				<li>
+					<div class="bar-textkhd">
+						<img width="18" height="18" src="../img/nr3.png" alt="">
+						<p>客户端</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 导航条结束 -->
+	<!-- 菜单栏 -->
+	<div class="logo">
+		<div class="logo_img">
+			<a href="#" title="美食天下">美食天下</a>
+		</div>
+		<div class="logo_current">
+			<h1>
+				<a href="#" title="社区">专题</a>
+			</h1>
+		</div>
+		<div class="logo_search">
+			<div>
+				<input type="text" id="s" class="search_Text">
+				<a href="#" title="搜索" id="search" class="search_Btn">搜索</a>
+			</div>
+		</div>
+		<div class="logo_nav">
+			<a href="#" class="on">专题首页<i></i><b></b></a>
+			<a href="#">排行</a>
+			<span>|</span>
+			<a href="#">菜单</a>
+			<a href="#">清单</a>
+		</div>
+	</div>
+	<div  class="nav_wrap2">
+		<ul class="nav_wrap2_ulss">
+			<li ><a href="#" class="on">全部</a></li>
+			<li><a href="#">主题美食</a></li>
+			<li><a href="#">厨电专题</a></li>
+			<li><a href="#">食材专题</a></li>
+			<li><a href="#">经典美食</a></li>
+			<li><a href="#">健康美食</a></li>
+		</ul>
+	</div>
+	<section class="wrap">
+		<div class="wrap_dis">
+			<ul class="wrap_dis_uls">
+				<li>
+					<i><img src="../img/zt1.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/zt2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/zt4.jpg" alt=""></i>
+					<span><a href="#">小炒菜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/zt5.jpg" alt=""></i>
+					<span><a href="#">木耳炒菜</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt1.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/zt7.jpg" alt=""></i>
+					<span><a href="#">青菜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/zt8.jpg" alt=""></i>
+					<span><a href="#">白菜</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt9.jpg" alt=""></i>
+					<span><a href="#">蛋炒胡萝卜</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/zt11.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/zt2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt11.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/zt2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt11.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/zt2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt11.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/zt2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt1.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/zt2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<ul class="wrap_dis_uls">
+				<li>
+					<i><img src="../img/ztms1.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/ztms2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/ztms4.jpg" alt=""></i>
+					<span><a href="#">小炒菜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/ztms5.jpg" alt=""></i>
+					<span><a href="#">木耳炒菜</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms6.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/ztms7.jpg" alt=""></i>
+					<span><a href="#">青菜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/ztms8.jpg" alt=""></i>
+					<span><a href="#">白菜</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms9.jpg" alt=""></i>
+					<span><a href="#">蛋炒胡萝卜</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/ztms10.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/ztms11.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms12.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms13.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/ztms14.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms15.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms1.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/ztms2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms4.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/ztms5.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms6.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms7.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/ztms8.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms9.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<ul class="wrap_dis_uls">
+				<li>
+					<i><img src="../img/cdzt1.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/cdzt2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/cdzt4.jpg" alt=""></i>
+					<span><a href="#">小炒菜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/cdzt5.jpg" alt=""></i>
+					<span><a href="#">木耳炒菜</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt6.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/cdzt7.jpg" alt=""></i>
+					<span><a href="#">青菜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/cdzt8.jpg" alt=""></i>
+					<span><a href="#">白菜</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt9.jpg" alt=""></i>
+					<span><a href="#">蛋炒胡萝卜</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/cdzt10.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/cdzt11.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt12.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt13.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/cdzt14.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt15.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt16.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/cdzt17.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt18.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt19.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/cdzt20.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt21.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt22.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/cdzt23.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt1.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<ul class="wrap_dis_uls">
+				<li>
+					<i><img src="../img/zt5.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/zt2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/zt4.jpg" alt=""></i>
+					<span><a href="#">小炒菜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/zt5.jpg" alt=""></i>
+					<span><a href="#">木耳炒菜</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt1.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/zt7.jpg" alt=""></i>
+					<span><a href="#">青菜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/zt8.jpg" alt=""></i>
+					<span><a href="#">白菜</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt9.jpg" alt=""></i>
+					<span><a href="#">蛋炒胡萝卜</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/zt11.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/zt2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt11.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/zt2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt11.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/zt2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt11.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/zt2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt1.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/zt2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/zt3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<ul class="wrap_dis_uls">
+				<li>
+					<i><img src="../img/cdzt1.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/cdzt2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/cdzt4.jpg" alt=""></i>
+					<span><a href="#">小炒菜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/cdzt5.jpg" alt=""></i>
+					<span><a href="#">木耳炒菜</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt6.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/cdzt7.jpg" alt=""></i>
+					<span><a href="#">青菜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/cdzt8.jpg" alt=""></i>
+					<span><a href="#">白菜</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt9.jpg" alt=""></i>
+					<span><a href="#">蛋炒胡萝卜</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/cdzt10.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/cdzt11.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt12.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt13.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/cdzt14.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt15.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt16.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/cdzt17.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt18.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt19.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/cdzt20.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt21.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt22.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/cdzt23.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/cdzt1.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<ul class="wrap_dis_uls">
+				<li>
+					<i><img src="../img/ztms1.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/ztms2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/ztms4.jpg" alt=""></i>
+					<span><a href="#">小炒菜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/ztms5.jpg" alt=""></i>
+					<span><a href="#">木耳炒菜</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms6.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/ztms7.jpg" alt=""></i>
+					<span><a href="#">青菜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/ztms8.jpg" alt=""></i>
+					<span><a href="#">白菜</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms9.jpg" alt=""></i>
+					<span><a href="#">蛋炒胡萝卜</a></span>
+				</li>
+
+				<li>
+					<i><img src="../img/ztms10.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/ztms11.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms12.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms13.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/ztms14.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms15.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms1.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/ztms2.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms3.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms4.jpg" alt=""></i>
+					<span><a href="#">蜂蜜</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/ztms5.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms6.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms7.jpg" alt=""></i>
+					<span><a href="#">糖醋排骨</a></span>
+				</li>
+				<li class="wrap_dis_uls_li">
+					<i><img src="../img/ztms8.jpg" alt=""></i>
+					<span><a href="#">红烧肉</a></span>
+				</li>
+				<li>
+					<i><img src="../img/ztms9.jpg" alt=""></i>
+					<span><a href="#">可乐鸡翅</a></span>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- 菜单栏 end-->
+	<!-- 分页  -->
+	<div class="ui-page mt10">
+		<div class="ui-page-inner">
+			<a href="#">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">4</a>
+			<a href="#">5</a>
+			<span>....</span>
+			<a href="#">下一页</a>
+		</div>
+		
+	</div>
+	<!-- 分页 end  -->
+	<!-- 底部图片 -->
+	<div class="areas">
+		<img src="../img/ztfoot2.jpg" alt="">
+	</div>
+	<!-- 底部图片 end -->
+	<!-- 底部版权  -->
+	<div class="footer-areas">
+		<div class="ws">
+			<div class="ft11">
+				<p class="ft11_c3b">
+					<a href="#">美食天下 - 让吃更美好！</a>
+				</p>
+				<p class="ft11_c2c">
+					<a href="#">菜谱</a> ·
+					<a href="#">食材</a> ·
+					<a href="#">魔方</a> ·
+					<a href="#">关于我们</a> ·
+					<a href="#">联系我们</a> ·
+					<a href="#">加入我们</a> ·
+					<a href="#">服务声明</a> ·
+					<a href="#">友情链接</a> ·
+					<a href="#">服务声明</a> ·
+					<a href="#">网络地图</a> ·
+					<a href="#">移动应用</a> 
+				</p>
+				<p>© 2004-2019 美食天下 保留所有权利 - 京ICP证090244号</p>
+			</div>
+			<div class="ft12">
+				<img width="82" src="../img/weixin.png" alt="">
+				微信公众号
+			</div>
+			<div class="ft13">
+				<img width="82" src="../img/msc_app.png" alt="">
+				手机客户端
+			</div>
+		</div>
+	</div>
+	<!-- 底部版权 end -->
+	<!-- 回到顶部 -->
+	<div class="gotop">
+		<a href="#"><img src="../img/gotop.png" title="回到顶部"></a>
+	</div>
+	<!-- 回到顶部 end -->
+
+
+</body>
+</html>

@@ -1,0 +1,603 @@
+.*{
+    padding:0px;
+    margin: 0px;
+}
+/* 导航条开始 */
+.top-bar1{
+    height: 40px;
+    background: green;
+    color: #999;
+    top: 0;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    left: 0;
+    min-width: 990px;
+}
+.w{
+    position: relative;
+    top:0px;
+    left: 0px;
+}
+.logo_wrap2 {
+    overflow: visible;
+    padding-top: 50px;
+    height: 65px;
+    margin: auto;
+    width: 990px;
+}
+.logo_wrap2 .logo_inner{
+    background: url(../img/logo.png) no-repeat scroll left center/108px auto;
+    width: 108px;
+}
+.left{
+    float: left;
+}
+
+.logo_wrap2 .logo_inner a{
+    display: block;
+    height: 60px;
+    overflow: hidden;
+    text-indent: -9999em;
+
+}
+a{
+    color:#333;
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo_wrap2 .logo_current{
+    height: 30px;
+    line-height: 30px;
+    margin: 15px 0 0 10px;
+    padding: 0 0 0 10px;
+} 
+h1{
+    font-size: 100%;
+    font-weight: 400px;
+    display: block;
+}
+.logo_wrap2 .logo_current a{
+    text-decoration:none;
+    color:#fff;
+    background:#ff838b;
+    border-radius: 5px;
+    font-size:20px;
+    padding:0px 10px;
+    display:block;
+}
+.right{
+    float:right;
+}
+.logo_wrap2 .logo_search{
+    padding-top:19px;
+}
+.logo_wrap2 .logo_search .search_Btn {
+    border-radius:0px 3px 3px 0px;
+    width: 80px;
+    height: 28px;
+    font-size: 14px;
+    color:#fff;
+    text-indent:35px;
+    line-height:28px;
+    background: #999 url(../img/search.png) no-repeat scroll 12px center/16px auto;
+    
+}
+.logo_wrap2 .logo_search .search_Btn:hover{
+     color: white;
+     background-color:#ff6767;
+}
+.logo_wrap2 .logo_search .search_Text{
+    width: 160px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 3px 0px 0px 3px;
+    height: 20px;
+    line-height: 20px;
+    padding: 3px;
+}
+.logo_nav{
+    float:right;
+    padding:0 40px 0px 0px;
+    height:40px;
+}
+.logo_nav a.on {
+    color: #ff6767;
+}
+.logo_nav a{
+    position: relative;
+    float: left;
+    padding: 0 10px 5px;
+    font-size: 20px;
+    line-height: 60px;
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+.logo_nav a:hover{
+    color: #ff6767;
+}
+.logo_nav a.on i{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 1;
+    display: block;
+    overflow: hidden;
+    margin-left: -9px;
+    width: 0;
+    height: 0;
+    border: 9px dashed transparent;
+    border-bottom: 9px solid #ff6767;
+    font-style: normal;
+}
+.logo_nav a.on b {
+    position: absolute;
+    bottom: -1.3px;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    overflow: hidden;
+    margin-left: -9px;
+    width: 0;
+    height: 0;
+    border: 9px dashed transparent;
+    border-bottom: 9px solid #fff;
+    font-weight:400px;
+}
+.nav_wrap2{
+    padding:0px;
+    margin:0px;
+    height: 34px;
+    border-bottom:1px solid red;
+    border-top: 1px solid red;
+    margin: auto;
+    width: 990px;
+}
+/*  导航条结束 */
+
+
+/* 图片开始 */
+.slan{
+    width: 100%;
+    height: 350px;
+    clear: both;
+    position: relative;
+    margin-top: 40px;
+}
+.slanh{
+    width:100%;
+    height:350px;
+     display: block;
+}
+.show1{
+    width:100%;
+    height:350px;
+    display:block;
+    float: left;
+    background:url(../img/lanzhis.jpg) center;
+}
+.slanh .divi{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.divi a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-indent: -9999em; 
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+.slanh .show1:hover{
+    cursor: pointer;
+}
+/* 图片结束 */
+
+
+/* 文字开始 */
+.msb{
+    margin: auto;
+    width: 990px;
+    padding: 30px 0;
+    overflow: hidden;
+}
+.recipeArction{
+    padding:15px 0;
+}
+.recipeArction .collect_da{
+    list-style:none;
+    display:block;
+    float: right;
+    margin:0 0 5px 10px;
+    width:300px;
+}
+.recipeArction .collect_da li{
+    float: left;
+    width:25%;
+}
+.collect_da li a{
+    text-decoration: none;
+    color: #666;
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    cursor:pointer;
+}
+.collect_da li.fav a i{
+    background-position: 0 0;
+}
+.collect_da li a.J_s4 i{
+    background-position: -150px 0;
+}
+.collect_da li a.J_s2 i{
+    background-position: -90px 0;
+}
+.collect_da li a.J_s1 i{
+    background-position: -60px 0;
+}
+.collect_da li a i{
+    width:30px;
+    height:30px;
+    display:block;
+    margin:2px auto;
+    background:rgba(0,0,0,0) url(../img/ix2lan.png) no-repeat scroll 0 0/auto 30px;
+}
+.msb p{
+    font-size: 18px;
+    color: #333;
+    padding: 0 0 20px 0;
+}
+
+/* 文字结束 */
+
+
+/* 花样素食，每天不重样 开始 */
+.divs{
+    width: 100%;
+    height:114px;
+}
+.divss{
+    width:990px;
+    height:114px;
+    margin:0 auto;
+}
+.molan{
+    font-size:20px;
+    color:#ff6767;
+    line-height: 20px;
+    padding:20px 0 20px 25px;
+    margin:0 auto;
+    background:rgba(0,0,0,0) url(../img/mo11111.png) no-repeat scroll left center;
+}
+.molan h2{
+    color:#ff6767;
+    font-size:100%;
+}
+.divs p{
+    font-family:'YouYuan';
+    font-size:18px;
+    font-weight:400px;
+}
+/* 花样素食，每天不重样 结束 */
+
+
+/* 花样素食，每天不重样列表 开始 */
+.msb_lists{
+    width:100%;
+    height:900px;
+}
+.msb_listss{
+    width:990px;
+    height:900px;
+    margin:0 auto;
+    padding-top:10px;
+    zoom:1px;
+}
+.ulan{
+    list-style:none;
+}
+.msb_listss li{
+    float: left;
+    margin: 0 23px 20px 0;
+    width: 220px;
+    text-align: center;
+    position: relative;
+}
+.msb_listss li a{
+    color:#333;
+    text-decoration:none;
+}
+.msb_listss li a:hover{
+    color:#ff6767;
+}
+.msb_listss a span.copyright{
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+    height: 20px;
+    left: 5px;
+    line-height: 20px;
+    padding: 1px 4px;
+    position: absolute;
+    top: 5px;
+}
+.msb_listss span{
+    color: #333;
+    display: block;
+    font-size: 18px;
+    font-weight:bold;
+    padding: 5px 0 0 0;
+}
+.msb_listss span:hover{
+    color:#ff6767;
+}
+.msb_listss li img {
+    margin: 0 auto;
+}
+msb_listss li imgLoad{
+    display:block;
+}
+/* 花样素食，每天不重样列表 结束 */
+
+
+/* 原来吃肉也可以减肥文字开始 */
+.divs1{
+    display:inline-block;
+    width: 100%;
+    height:114px;
+}
+.divss1{
+    display:block;
+    width:990px;
+    height:114px;
+    margin:0 auto;
+}
+.molan1{
+    font-size:20px;
+    color:#ff6767;
+    line-height: 20px;
+    padding:20px 0 20px 25px;
+    margin:0 auto; 
+    background:rgba(0,0,0,0) url(../img/mo11111.png) no-repeat scroll left center;
+}
+.molan1 h2{
+    color:#ff6767;
+    font-size:100%;
+    font-weight:400px;
+}
+.divs1 p{
+    font-family:'YouYuan';
+    font-size:18px;
+    font-weight:400px;
+}
+/* 原来吃肉也可以减肥文字结束 */
+
+/* 原来吃肉也可以减肥列表开始 */
+.msb_lists1{
+    width:100%;
+    height:1200px;
+}
+.msb_listss1{
+    display:block;
+    width:990px;
+    height:1200px;
+    padding-top:10px;
+    margin:0 auto;
+    zoom:1px;
+}
+.ulan{
+    list-style:none;
+}
+.msb_listss1 li{
+    float: left;
+    margin: 0 23px 20px 0;
+    width: 220px;
+    text-align: center;
+    position: relative;
+}
+.msb_listss1 li a{
+    color:#333;
+    text-decoration:none;
+}
+
+.msb_listss1 a span.copyright{
+    background: #333;
+    background: rgba(0,0,0,.5);
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    height: 20px;
+    left: 5px;
+    line-height: 20px;
+    padding: 1px 4px;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+}
+.msb_listss1 span{
+    color: #333;
+    display: block;
+    font-size: 18px;
+    font-weight:bold;
+    padding: 5px 0 0 0;
+}
+.msb_listss1 li img {
+    margin: 0 auto;
+    opacity: 0.8;
+}
+.msb_listss1 li imgLoad{
+    display:block;
+}
+.msb_listss1 li span:hover{
+    color:#ff6767;
+}
+/* 原来吃肉也可以减肥列表结束 */
+
+
+/* 你可能还可能喜欢的专题列表开始 */
+.gongxlans{
+    width:100%;
+    overflow:hidden;
+}
+.gongxlan{
+    width:990px;
+    padding-top:10px;
+    margin:0 auto;
+    zoom:1px;
+}
+.gongxlans .gongxlan a{
+    float: left;
+    width: 150px;
+    border: 1px solid #eee;
+    margin: 15px 13px 0 0;
+    text-align: center;
+    font-family:'YouYuan';
+    font-size: 18px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 8px;
+}
+.gongxlans .gongxlan a:hover{
+    color:#ff6767;
+}
+/* 你可能还可能喜欢的专题结束 */
+
+/* 底部版权开始 */
+.footer-areas{
+    width: 990px;
+    height:132px;
+    margin:auto;
+    margin-top:40px;
+    border-top: 1px solid rgba(0,0,0,0.2); 
+} 
+.footer-areas .ws {
+    padding-top: 10px;
+    border-top: 1px solid #e8e8e8;
+}
+.ws {
+    width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ft11 {
+    clear: none;
+    float: left;
+    font-size: 11px;
+    color: #666;
+    width: 680px;
+    padding-top: 10px;
+}
+.ft11 .ft11_c3b {
+    color: #c90;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.ft11 .ft11_c3b a {
+    color: #f50;
+}
+.ft11 .ft11_c2c {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+.ft11 .ft11_c2c a{
+    color: #666;
+}
+.ft12,.ft13 {
+    clear: none;
+    float: right;
+    text-align: center;
+}
+
+.ft13 {
+    margin: 0 25px;
+}
+.ft12 img,.ft13 img{
+   display: block;
+   border: 0;
+   vertical-align: middle;
+}
+/* 底部版权 end  */
+
+
+/* 回到顶部开始 */
+.fixed-footer{
+    position: fixed;
+    bottom: 10px;
+    left: -9999px;
+    z-index: 102410px;
+    height: 58px;
+}
+.fixed-footer-go{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline;
+    width: 58px;
+    height: 58px;
+    background: url(../img/gotop.png) no-repeat scroll center center/58px 58px;
+}
+/* 回到顶部结束 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
